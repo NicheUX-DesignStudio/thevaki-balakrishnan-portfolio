@@ -16,7 +16,7 @@ import {
   Image, Sparkles,
 } from 'lucide-react';
 import { ReactNode } from 'react';
-import { Project } from '@/data/projects';
+import { Project } from '../../data/projects';
 import EvidenceHeader from './EvidenceHeader';
 import KnownAssociatesBoard from './KnownAssociatesBoard';
 import EvidenceTag from '../EvidenceTag';
