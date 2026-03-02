@@ -1,0 +1,669 @@
+/* src/index.css — COMPLETE FIXED VERSION WITH MAGNIFYING GLASS CURSOR */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DARK THEME - HIGH CONTRAST */
+    --background: 183 44% 4%;
+    --foreground: 45 20% 96%;
+    
+    --background-interior: 183 44% 6%;
+    --surface: 183 40% 9%;
+    --surface-elevated: 183 36% 12%;
+    
+    --gold: 43 85% 62%;
+    --coral: 8 78% 65%;
+    --cyan: 185 68% 62%;
+    --emerald: 152 60% 52%;
+    --rose: 350 70% 62%;
+    
+    --primary: 43 85% 62%;
+    --accent: 8 78% 65%;
+    --secondary: 185 68% 62%;
+    
+    --primary-foreground: 183 44% 4%;
+    --accent-foreground: 183 44% 4%;
+    --secondary-foreground: 183 44% 4%;
+    
+    --muted: 183 40% 9%;
+    --muted-foreground: 185 30% 82%;
+    
+    --card: 183 44% 6%;
+    --card-foreground: 45 20% 96%;
+    
+    --popover: 183 44% 6%;
+    --popover-foreground: 45 20% 96%;
+    
+    --border: 185 35% 25%;
+    --input: 185 35% 25%;
+    --ring: 43 85% 62%;
+    
+    --destructive: 350 70% 62%;
+    --destructive-foreground: 183 44% 4%;
+    
+    /* Table colors */
+    --table-header: 43 85% 62%;
+    --table-header-text: 183 44% 4%;
+    --table-body: 183 40% 9%;
+    --table-body-text: 45 20% 96%;
+    --table-border: 185 35% 30%;
+    
+    /* Building colors */
+    --building: 183 44% 6%;
+    --building-dark: 183 44% 3%;
+    --building-detail: 183 40% 12%;
+    
+    /* Window colors */
+    --window-amber: 43 85% 62%;
+    --window-coral: 8 78% 65%;
+    --window-cyan: 185 68% 62%;
+    --window-dim: 183 40% 20%;
+    --window-dark: 183 44% 10%;
+    
+    /* Shadows */
+    --shadow-elevation-low: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-elevation-medium: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --shadow-elevation-high: 0 16px 48px rgba(0, 0, 0, 0.7);
+    
+    --glow-amber: 0 0 40px rgba(245, 197, 66, 0.3);
+    --glow-coral: 0 0 40px rgba(240, 138, 108, 0.3);
+    --glow-cyan: 0 0 40px rgba(92, 184, 184, 0.3);
+    
+    --radius: 0.125rem;
+  }
+
+  .light-theme {
+    --background: 45 25% 96%;
+    --foreground: 183 44% 12%;
+    
+    --background-interior: 45 22% 94%;
+    --surface: 45 20% 90%;
+    --surface-elevated: 45 18% 86%;
+    
+    --gold: 43 85% 52%;
+    --coral: 8 78% 58%;
+    --cyan: 185 68% 48%;
+    
+    --primary: 43 85% 52%;
+    --accent: 8 78% 58%;
+    --secondary: 185 68% 48%;
+    
+    --primary-foreground: 45 25% 96%;
+    --accent-foreground: 45 25% 96%;
+    --secondary-foreground: 45 25% 96%;
+    
+    --muted: 45 20% 90%;
+    --muted-foreground: 183 44% 25%;
+    
+    --card: 45 22% 94%;
+    --card-foreground: 183 44% 12%;
+    
+    --popover: 45 22% 94%;
+    --popover-foreground: 183 44% 12%;
+    
+    --border: 45 25% 75%;
+    --input: 45 25% 75%;
+    --ring: 43 85% 52%;
+    
+    --destructive: 350 70% 58%;
+    --destructive-foreground: 45 25% 96%;
+    
+    --table-header: 43 85% 52%;
+    --table-header-text: 45 25% 96%;
+    --table-body: 45 20% 90%;
+    --table-body-text: 183 44% 12%;
+    --table-border: 45 25% 70%;
+    
+    --building: 45 22% 90%;
+    --building-dark: 45 22% 82%;
+    --building-detail: 45 22% 78%;
+    
+    --shadow-elevation-low: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-elevation-medium: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-elevation-high: 0 16px 48px rgba(0, 0, 0, 0.12);
+    
+    --glow-amber: 0 0 30px rgba(230, 179, 46, 0.2);
+    --glow-coral: 0 0 30px rgba(230, 122, 92, 0.2);
+    --glow-cyan: 0 0 30px rgba(47, 158, 158, 0.2);
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  :focus-visible {
+    outline: 3px solid hsl(var(--primary));
+    outline-offset: 4px;
+  }
+}
+
+@layer components {
+  /* HEADER */
+  .evidence-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: hsl(var(--background-interior) / 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid hsl(var(--accent) / 0.5);
+    box-shadow: var(--shadow-elevation-medium);
+  }
+
+  /* CASE FILE */
+  .case-file {
+    position: relative;
+    border: 2px solid hsl(var(--accent) / 0.5);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    background: hsl(var(--surface));
+    box-shadow: var(--shadow-elevation-low);
+  }
+
+  .case-file::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--primary) / 0.8), transparent);
+  }
+
+  /* EVIDENCE BOARD */
+  .evidence-board {
+    position: relative;
+    padding: 1.5rem;
+    border: 2px solid hsl(var(--accent) / 0.3);
+    border-radius: 0.125rem;
+    background: hsl(var(--surface-elevated));
+    box-shadow: var(--shadow-elevation-low);
+  }
+  @media (min-width: 768px) {
+    .evidence-board {
+      padding: 2rem;
+    }
+  }
+
+  /* EVIDENCE PHOTO */
+  .evidence-photo {
+    position: relative;
+    padding: 1.25rem;
+    border: 2px solid hsl(var(--border));
+    border-radius: 0.125rem;
+    background: hsl(var(--surface));
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-elevation-low);
+  }
+
+  .evidence-photo:hover {
+    border-color: hsl(var(--accent));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px hsl(var(--accent) / 0.25);
+  }
+
+  /* EVIDENCE PIN */
+  .evidence-pin {
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    border: 2px solid hsl(var(--background));
+    background: hsl(var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px hsl(var(--accent) / 0.6);
+  }
+
+  .evidence-pin-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: hsl(var(--background));
+  }
+
+  /* EXHIBIT TAG */
+  .exhibit-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.5rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    background: hsl(var(--accent) / 0.2);
+    color: hsl(var(--accent));
+    border: 1px solid hsl(var(--accent) / 0.6);
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 600;
+    color: hsl(var(--primary));
+  }
+  @media (min-width: 768px) {
+    .section-label {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* ============================================
+   * CRIME SCENE TAPE — REAL YELLOW POLICE TAPE
+   * ============================================ */
+  .crime-scene-tape {
+    /* Break completely out of any parent container to span full viewport width */
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* Shared styles for both tape strips */
+  .tape-strip-top,
+  .tape-strip-bottom {
+    display: block;
+    width: 110%;
+    margin-left: -5%;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0.65rem 1rem;
+    color: #111111;
+    position: relative;
+  }
+
+  /* TOP STRIP — bright yellow, tilts left */
+  .tape-strip-top {
+    background: #F5C518;
+    transform: rotate(-1.6deg);
+    transform-origin: left center;
+    z-index: 2;
+    box-shadow:
+      inset 0 3px 0 rgba(255,255,255,0.45),
+      inset 0 -3px 0 rgba(0,0,0,0.18),
+      0 5px 15px rgba(0,0,0,0.4);
+  }
+
+  /* BOTTOM STRIP — slightly darker, tilts right, overlaps top */
+  .tape-strip-bottom {
+    background: #D4A017;
+    transform: rotate(1.2deg);
+    transform-origin: right center;
+    margin-top: -0.9rem;
+    z-index: 1;
+    box-shadow:
+      inset 0 3px 0 rgba(255,255,255,0.25),
+      inset 0 -3px 0 rgba(0,0,0,0.25),
+      0 5px 15px rgba(0,0,0,0.35);
+  }
+
+  /* Light mode: softer shadow so it doesn't look like a grey blob on white */
+  .light-theme .tape-strip-top {
+    box-shadow:
+      inset 0 3px 0 rgba(255,255,255,0.5),
+      inset 0 -3px 0 rgba(0,0,0,0.1),
+      0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .light-theme .tape-strip-bottom {
+    box-shadow:
+      inset 0 3px 0 rgba(255,255,255,0.3),
+      inset 0 -3px 0 rgba(0,0,0,0.12),
+      0 4px 12px rgba(0,0,0,0.12);
+  }
+
+  /* Hide legacy child divs */
+  .crime-scene-tape-line,
+  .crime-scene-tape-text {
+    display: none;
+  }
+
+  /* ARCHIVE TABLE */
+  .archive-table {
+    width: 100%;
+    font-size: 0.875rem;
+    border-collapse: collapse;
+  }
+
+  .archive-table thead th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    background: hsl(var(--table-header));
+    color: hsl(var(--table-header-text));
+    border-bottom: 2px solid hsl(var(--accent) / 0.5);
+  }
+
+  .archive-table tbody td {
+    padding: 0.75rem 1rem;
+    background: hsl(var(--table-body));
+    color: hsl(var(--table-body-text));
+    border-bottom: 1px solid hsl(var(--table-border) / 0.5);
+  }
+
+  /* ============================================
+   * FLOW NODE
+   * ============================================ */
+  .flow-node {
+    position: relative;
+    padding: 0.75rem 1rem;
+    border: 2px solid hsl(var(--border));
+    border-radius: 0.125rem;
+    background: hsl(var(--surface));
+    color: hsl(var(--foreground));
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+  }
+
+  .flow-node::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: hsl(var(--accent));
+    transform: translateY(-50%);
+  }
+
+  /* ============================================
+   * TIMELINE — LINE RUNS THROUGH CIRCLE CENTERS
+   * ============================================ */
+  .timeline {
+    position: relative;
+    /* NO padding — the line position is calculated from left:0 */
+  }
+
+  /* Vertical accent line passing through all circle centers */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    /* 1.5rem = half the marker width (3rem / 2) 
+       The line is 2px wide so we subtract 1px to center it perfectly */
+    left: calc(1.5rem - 1px);
+    top: 1.5rem;   /* start at center of first circle */
+    bottom: 1.5rem; /* end at center of last circle */
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--accent) / 0.9),
+      hsl(var(--accent) / 0.9)
+    );
+    z-index: 0;
+  }
+
+  .timeline-marker {
+    flex-shrink: 0;
+    width: 3rem;   /* 48px — must match left: 1.5rem calc above */
+    height: 3rem;
+    border-radius: 9999px;
+    border: 2px solid hsl(var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;  /* sits ON TOP of the line */
+    background: hsl(var(--background));
+    color: hsl(var(--accent));
+    box-shadow: 0 0 0 4px hsl(var(--background)), 0 0 20px hsl(var(--accent) / 0.3);
+    /* The extra ring of background color creates a clean gap between line and circle border */
+  }
+
+  /* VERDICT STAMP */
+  .verdict-stamp {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid hsl(var(--emerald) / 0.9);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transform: rotate(-2deg);
+    color: hsl(var(--emerald));
+    background: hsl(var(--emerald) / 0.15);
+    font-weight: 700;
+  }
+
+  /* ============================================
+   * FILM GRAIN — Subtle texture, no darkening
+   * ============================================ */
+  .film-grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+    mix-blend-mode: overlay;
+  }
+
+  /* ============================================
+   * VIGNETTE — TOP AND BOTTOM EDGES ONLY
+   * No center darkening, no content blocking
+   * ============================================ */
+  .vignette {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    /* Only darken top and bottom edges, NOT the center/sides.
+       This creates a cinematic letterbox feel without blocking any content. */
+    background: 
+      linear-gradient(
+        to bottom,
+        hsl(var(--background) / 0.55) 0%,
+        transparent 12%,
+        transparent 88%,
+        hsl(var(--background) / 0.55) 100%
+      );
+  }
+
+  /* Light theme — vignette completely removed, film grain hidden too */
+  .light-theme .vignette {
+    display: none;
+  }
+
+  .light-theme .film-grain {
+    display: none;
+  }
+
+  /* CASE SECTION */
+  .case-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 768px) {
+    .case-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .case-section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  /* READABLE WIDTH */
+  .readable-width {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* RED THREAD */
+  .red-thread-vertical {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, hsl(var(--accent) / 0.7), hsl(var(--accent) / 0.7), transparent);
+  }
+
+  .red-thread-horizontal {
+    height: 2px;
+    background: linear-gradient(to right, transparent, hsl(var(--accent) / 0.7), hsl(var(--accent) / 0.7), transparent);
+  }
+
+  /* ============================================
+   * MOBILE RESPONSIVE FIXES
+   * ============================================ */
+
+  /* Archive table — horizontal scroll on mobile */
+  .archive-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent text overflow on narrow screens */
+  .case-file,
+  .evidence-board,
+  .evidence-photo {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Timeline on mobile: tighter layout */
+  @media (max-width: 640px) {
+    /* marker shrinks to 2.5rem (40px) → center at 1.25rem */
+    .timeline::before {
+      left: calc(1.25rem - 1px);
+      top: 1.25rem;
+      bottom: 1.25rem;
+    }
+
+    .timeline-marker {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 0.65rem;
+      /* re-calculate the ring gap for smaller size */
+      box-shadow: 0 0 0 3px hsl(var(--background)), 0 0 14px hsl(var(--accent) / 0.3);
+    }
+
+    /* Stack grid columns on mobile */
+    .grid.md\:grid-cols-2,
+    .grid.md\:grid-cols-3,
+    .grid.md\:grid-cols-4 {
+      grid-template-columns: 1fr;
+    }
+
+    /* Reduce section padding on mobile */
+    .case-section {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    /* Crime scene tape smaller font on mobile */
+    .crime-scene-tape::before,
+    .crime-scene-tape::after {
+      font-size: 0.5rem;
+      letter-spacing: 0.12em;
+    }
+
+    /* Header nav hidden on small screens — handled by existing lg:flex */
+    .evidence-board {
+      padding: 1rem;
+    }
+  }
+
+  /* Medium screens */
+  @media (min-width: 641px) and (max-width: 1023px) {
+    .timeline-marker {
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+  }
+}
+
+/* ============================================
+ * SCROLLBAR
+ * ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background-interior));
+  border-left: 1px solid hsl(var(--accent) / 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent) / 0.5);
+  border: 1px solid hsl(var(--accent) / 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent) / 0.7);
+}
+
+/* ============================================
+ * MAGNIFYING GLASS CURSOR — Detective theme
+ * Applied to the whole case study page
+ * ============================================ */
+.case-study-page {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='9' fill='none' stroke='%23c0392b' stroke-width='2.5'/%3E%3Ccircle cx='13' cy='13' r='9' fill='rgba(192%2C57%2C43%2C0.08)'/%3E%3Ccircle cx='11' cy='11' r='2.5' fill='rgba(255%2C255%2C255%2C0.35)'/%3E%3Cline x1='20' y1='20' x2='29' y2='29' stroke='%23c0392b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") 13 13, crosshair;
+}
+
+/* Zoom cursor on clickable images */
+.case-study-page .cursor-zoom-in {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='9' fill='none' stroke='%23c0392b' stroke-width='2.5'/%3E%3Ccircle cx='13' cy='13' r='9' fill='rgba(192%2C57%2C43%2C0.15)'/%3E%3Cline x1='10' y1='13' x2='16' y2='13' stroke='%23c0392b' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='13' y1='10' x2='13' y2='16' stroke='%23c0392b' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='20' y1='20' x2='29' y2='29' stroke='%23c0392b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") 13 13, zoom-in;
+}
+
+/* Pointer for interactive elements */
+.case-study-page button,
+.case-study-page a,
+.case-study-page [role="tab"],
+.case-study-page [role="button"] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='9' fill='none' stroke='%23e07b5a' stroke-width='2.5'/%3E%3Ccircle cx='13' cy='13' r='9' fill='rgba(224%2C123%2C90%2C0.15)'/%3E%3Ccircle cx='11' cy='11' r='2' fill='rgba(255%2C255%2C255%2C0.4)'/%3E%3Cline x1='20' y1='20' x2='29' y2='29' stroke='%23e07b5a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") 13 13, pointer;
+}
