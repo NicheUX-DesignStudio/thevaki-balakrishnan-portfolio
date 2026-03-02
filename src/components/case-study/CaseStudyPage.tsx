@@ -1090,7 +1090,7 @@ const ExtrasContent = ({
           accentColor="#00B4D8"
           icon={<Users className="w-5 h-5" />}
           defaultOpen={false}
-          brief="Sooraj Nikam — the same client who commissioned the Kingdom of Sweets banner — needed a LinkedIn header communicating his identity as a product thinker. His tagline: Conceptualize · Develop · Deliver. The challenge was making a dark, tech-forward design feel personal rather than corporate."
+          brief="Sooraj Nikam — the same client who commissioned the Kingdom of Sweets banner — needed a LinkedIn header communicating his identity as a data analyst. His tagline: Conceptualize · Develop · Deliver. The challenge was making a dark, tech-forward design feel personal rather than corporate."
           approach="Three iterations. Version A was green-and-white minimalist — clean, but didn't match Sooraj's energy. Versions B and C used a dark background with a tech-network particle effect and a real photo of Sooraj presenting. Version B stacked the tagline vertically; Version C ran it inline with dot separators — cleaner at small sizes and on mobile."
           outcome="Version C selected for live use. The real photo split (dark left, photo right) added credibility without needing a separate headshot session. The inline tagline worked as a rhythm as much as a message."
           images={LINKEDIN_IMAGES}
@@ -1831,19 +1831,6 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                     <div className="text-left">
                       <span className="text-sm font-bold block">View UI Design</span>
                       <span className="text-[10px] font-mono text-accent/80">3 versions · First Draft to Final</span>
-                    </div>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform flex-shrink-0" />
-                  </button>
-                )}
-
-                {/* Kishore: K29 Hi-Fi only (no UI screens button) */}
-                {isKishore && (
-                  <button onClick={() => setIsHiFiOpen(true)}
-                    className="group inline-flex items-center gap-3 px-6 sm:px-8 py-4 bg-amber-600/15 border-2 border-amber-600/50 rounded-sm text-amber-600 hover:bg-amber-600/25 transition-all duration-300">
-                    <Image className="w-5 h-5 flex-shrink-0" />
-                    <div className="text-left">
-                      <span className="text-sm font-bold block">View K29 Hi-Fi</span>
-                      <span className="text-[10px] font-mono text-amber-600/70">Full design · dark theme</span>
                     </div>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform flex-shrink-0" />
                   </button>

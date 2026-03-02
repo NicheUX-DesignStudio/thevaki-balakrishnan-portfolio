@@ -274,7 +274,7 @@ const AboutSection = ({ onClose }: AboutSectionProps) => {
 
             {/* Resume/CV */}
             <a
-              href="/resume.pdf" // Update this path to your actual resume file
+              href="/public/Thevaki Balakrishnan_UIUXDesigner.pdf" // Update this path to your actual resume file
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-4 bg-surface border border-border/10 rounded-sm hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 group"
@@ -282,7 +282,7 @@ const AboutSection = ({ onClose }: AboutSectionProps) => {
               <FileText className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors" />
               <div className="flex flex-col">
                 <span className="text-foreground font-medium">View Resume</span>
-                <span className="text-muted-foreground text-xs">PDF · Updated 2025</span>
+                <span className="text-muted-foreground text-xs">PDF · Updated 2026</span>
               </div>
               <ExternalLink className="w-4 h-4 text-muted-foreground/30 group-hover:text-primary/60 ml-auto transition-colors" />
             </a>

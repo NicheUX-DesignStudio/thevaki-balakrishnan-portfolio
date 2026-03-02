@@ -53,7 +53,7 @@ const ArrivalScene = ({ onComplete }: ArrivalSceneProps) => {
               className="space-y-6"
             >
               <p className="text-muted-foreground text-lg md:text-xl">
-                UI/UX Designer
+                UI/UX Designer . Storyteller . Social Media Content Creator
               </p>
               <p className="text-muted-foreground/60 text-sm tracking-widest uppercase">
                 Click a window to look inside
