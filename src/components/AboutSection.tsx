@@ -274,7 +274,7 @@ const AboutSection = ({ onClose }: AboutSectionProps) => {
 
             {/* Resume/CV */}
             <a
-              href="/resume.pdf" // Update this path to your actual resume file
+              href="/Thevaki_Balakrishnan_UXUIDesigner_Resume_.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-4 bg-surface border border-border/10 rounded-sm hover:border-primary/30 hover:bg-primary/5 transition-all duration-300 group"
