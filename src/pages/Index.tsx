@@ -61,7 +61,7 @@ const Index = () => {
     : null;
 
   return (
-    <div className="min-h-screen bg-background overflow-hidden">
+    <div className={`min-h-screen bg-background ${activeView.type === 'case-study' ? '' : 'overflow-hidden'}`}>
       {/* Cinematic Overlays */}
       <CinematicOverlay />
 

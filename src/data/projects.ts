@@ -2469,31 +2469,31 @@ This is a self-initiated project, which means every decision was both a design d
     },
     // ================================================
 
-    role: 'UX/UI Designer & Frontend Developer',
-    duration: 'Solo build, launched 2025',
-    team: 'Independent project for Nandhini Design Constructions (Tamil Nadu)',
-    tools: ['Figma', 'React', 'TypeScript', 'Vite', 'React Router', 'Schema.org / JSON-LD SEO', 'Google Search Console'],
+    role: 'Web Designer & Developer (Lead), NicheUX Studio',
+    duration: 'Agency project, launched 2025',
+    team: 'NicheUX Studio, for Nandhini Design Constructions (Tamil Nadu)',
+    tools: ['Figma', 'React', 'TypeScript', 'Vite', 'React Router', 'Framer Motion', 'Schema.org / JSON-LD SEO'],
 
     outcomeSummary:
-      'A live, SEO-structured site that turns two structural engineers\' technical credibility into a calm, Vastu-literate digital front door — routing every enquiry straight to a WhatsApp conversation with a founder.',
+      '98/100 on Google PageSpeed. A site that behaves like the spaces it documents: a daylight toggle, a horizontal project reel you move through like a house, and a WhatsApp-first contact model that drives the majority of inbound enquiries.',
 
-    context: `Nandhini Design Constructions (NDC) is an architecture and turnkey construction studio based in Nannilam, Tiruvarur, founded in February 2025 by two structural engineers — Er. Saran Chezhiyan (Construction & Operations) and Er. Prabaharan Ramasamy (Architecture & Design). The firm grew out of an earlier venture, AK Builders, and takes its current name from the founders' sister, Nandhini — "we carry her forward, one building at a time."
+    context: `Nandhini Design Constructions (NDC) is an architecture and interior design studio in Tamil Nadu, founded by Saran and Prabaharan. The studio name is a tribute, not branding: it honours Saran's late sister Nandhini, and every spatial decision the studio makes carries that weight. Their design philosophy is built on Vastu Shastra, the ancient Indian spatial tradition, spaces designed to enhance the wellbeing, energy, and purpose of the people who live in them.
 
-Their pitch to homeowners is specific: Vastu-aligned architecture, "Singapore-grade" structural engineering, and turnkey construction — one contract, one contact, one handover — across Tamil Nadu, from Kumbakonam to Thiruvarur to Marakkanam. I designed and built the site end-to-end: eight service disciplines, four fixed construction packages, four real projects, and a contact model built entirely around WhatsApp instead of a lead-gen funnel.`,
+NicheUX designed and built the studio's web presence end-to-end: services, fixed construction packages, four named projects across three districts, and a contact model built entirely around WhatsApp. The brief was simple to state and hard to execute well. Saran needed a web presence that held the same weight as the work itself.`,
 
-    problem: `In most of Tamil Nadu, home construction runs on informal local contractors: a verbal quote, a rough sketch, no structural drawings, trust built entirely on word of mouth. NDC's actual differentiator — that they run real structural calculations (IS 456, IS 800), soil-based foundation design, and Vastu integration from the first line drawn — is invisible unless someone explains it to a first-time homebuyer who has no way to evaluate it.
+    problem: `Interior design portfolios default to the grid: photos arranged in a row, light described in a caption if at all. That convention actively works against a studio like NDC, whose entire philosophy is that a space changes depending on how and when you move through it. A grid flattens that. It turns a considered building into a set of interchangeable thumbnails.
 
-The site's job was to make that invisible engineering rigour legible without turning it into a wall of code references. A person about to spend their life savings on a house needs to feel the difference between "we'll figure it out on site" and "we've already run the load calculations" — before they've met anyone in person.
+The deeper problem was translation. NDC's real differentiator, that every project starts from Vastu principles and is engineered with real structural rigour, is invisible unless someone explains it. A first-time visitor has no way to evaluate "Vastu-aligned" or "structurally sound" from a photo alone. The site needed to make that philosophy felt, not just stated.
 
-The second problem was operational, not visual: NDC has no sales team and no CRM. Saran and Prabaharan reply to enquiries personally. That meant the site had to do real qualifying work up front — plot size, district, budget band, timeline — so that by the time a founder opens WhatsApp, they already know what conversation they're walking into.`,
+There was also a practical question underneath it: research with Saran surfaced three distinct visitor types, each arriving with a different question, prospective clients sizing up whether this studio understands them, referral visitors doing a quick quality check, and professional contacts (contractors, engineers, vendors) judging technical credibility. One layout had to answer all three without favouring one at the expense of the others.`,
 
     businessContext: {
       goals: [
         'Position NDC as an engineering-first alternative to informal local contractors',
         'Make "Singapore-grade structural engineering" and Vastu integration tangible to a non-technical buyer',
         'Present four fixed construction packages with transparent ₹/sq.ft pricing, side by side',
-        'Showcase real and in-progress projects (Stone One, Second Gear, Third Moon, Fourth Pillar) as proof of execution',
-        'Route every enquiry directly into a WhatsApp conversation with a founder — no CRM, no sales layer',
+        'Showcase four named, documented projects (Stone One, Second Gear, Third Moon, and Fourth Pillar in design) as proof of execution',
+        'Route every enquiry directly into a WhatsApp conversation with a founder - no CRM, no sales layer',
       ],
       kpis: [
         'Enquiry form completions that convert into a WhatsApp thread',
@@ -2503,33 +2503,33 @@ The second problem was operational, not visual: NDC has no sales team and no CRM
       ],
       successMetrics: [
         'Enquiry and WhatsApp deep-link flows work end-to-end on mobile, the primary device for this audience',
-        'Package comparison is legible without a phone call — sq.ft, ₹/sq.ft, and inclusions all visible up front',
+        'Package comparison is legible without a phone call - sq.ft, ₹/sq.ft, and inclusions all visible up front',
         'Every service and structural-engineering claim on the site is something a founder can stand behind in person',
         'Full site indexed with schema.org GeneralContractor markup for local SEO',
       ],
       technicalConstraints: [
-        'No CRM, no chatbot, no sales team — the site has to pre-qualify every enquiry before a founder ever sees it',
-        'Most active projects had no finished photography yet — renders had to carry the credibility load, and had to be labelled honestly as renders, not real photos',
-        'Primary contact channel is WhatsApp, not email — enquiry flow needed to open a pre-filled WhatsApp message, not just submit a form into a void',
-        'Audience is majority mobile, often on inconsistent rural/semi-urban connectivity — pages needed to stay light',
+        'No CRM, no chatbot, no sales team - the site has to pre-qualify every enquiry before a founder ever sees it',
+        'Fourth Pillar was still in design during the build - it needed to appear on the site as active without misrepresenting it as complete',
+        'Primary contact channel is WhatsApp, not email - enquiry flow needed to open a pre-filled WhatsApp message, not just submit a form into a void',
+        'Audience is majority mobile, often on inconsistent rural/semi-urban connectivity - pages needed to stay light',
       ],
     },
 
     usersAndNeeds: {
       primaryUsers:
-        'First-time homeowners across Tamil Nadu — and NRIs building from abroad — planning a ground-up house, plus a smaller segment renovating or extending an existing home. Most are hiring a formal architecture/construction studio for the first time in their lives and are actively comparing NDC against informal local contractors.',
+        'First-time homeowners across Tamil Nadu - and NRIs building from abroad - planning a ground-up house, plus a smaller segment renovating or extending an existing home. Most are hiring a formal architecture/construction studio for the first time in their lives and are actively comparing NDC against informal local contractors.',
       needs: [
         'A way to evaluate structural and engineering credibility without a civil engineering background',
         'Transparent, comparable pricing across construction packages before ever picking up the phone',
-        'Proof — real projects, real founders, a real address — before committing to a first conversation',
+        'Proof - real projects, real founders, a real address - before committing to a first conversation',
         'A contact path that matches how they actually communicate: WhatsApp, not a form that disappears into an inbox',
         'Reassurance that Vastu and family living patterns are taken seriously, not treated as a checkbox',
       ],
       constraints: [
-        'No finished photography for most in-progress projects — renders had to be clearly labelled and time-of-day accurate',
-        'Founders reply personally with no support staff — the enquiry form had to gather enough detail to make that scalable',
-        'Some prospective clients are outside Tamil Nadu (NRIs, "pan Tamil Nadu, and beyond by invitation") — timelines and site-visit logistics differ for this group',
-        'No formal user research budget — the founders\' years of direct client conversations were the primary source of truth',
+        'No finished photography for most in-progress projects - renders had to be clearly labelled and time-of-day accurate',
+        'Founders reply personally with no support staff - the enquiry form had to gather enough detail to make that scalable',
+        'Some prospective clients are outside Tamil Nadu (NRIs, "pan Tamil Nadu, and beyond by invitation") - timelines and site-visit logistics differ for this group',
+        'No formal user research budget - the founders\' years of direct client conversations were the primary source of truth',
       ],
     },
 
@@ -2542,20 +2542,20 @@ The second problem was operational, not visual: NDC has no sales team and no CRM
       ],
       participants: 'Both NDC co-founders across multiple working sessions; no external homeowner research conducted pre-launch',
       duration: 'Discovery and IA over 2–3 weeks, design and build iterative through 2025',
-      approach: `There was no existing user base to test against — NDC was a brand-new firm. The most reliable signal was the founders themselves: what they actually say on a site visit, in what order, and which objections come up every single time. "We listen first. Site visit, family, lifestyle, vastu" became the literal opening line of the site's process narrative because that's the literal first thing Saran and Prabaharan do with every client.
+      approach: `There was no existing user base to test against - NDC was a brand-new firm. The most reliable signal was the founders themselves: what they actually say on a site visit, in what order, and which objections come up every single time. "We listen first. Site visit, family, lifestyle, vastu" became the literal opening line of the site's process narrative because that's the literal first thing Saran and Prabaharan do with every client.
 
 The packages page exists because the same four or five pricing questions came up on every enquiry call. Turning that into a comparable, honest table meant founders stopped re-explaining ₹/sq.ft basics and could spend the actual call on the client's plot and family instead.`,
       objectives: [
         'Translate structural engineering rigour (foundation types, IS codes, soil-based design) into language a non-engineer trusts',
         'Give homeowners a way to compare four fixed packages without needing a phone call first',
         'Design a contact flow that matches how the founders actually work: WhatsApp, personal, fast',
-        'Represent unfinished/in-progress projects honestly — renders labelled as renders, real status shown per project',
+        'Represent unfinished/in-progress projects honestly - renders labelled as renders, real status shown per project',
       ],
       assumptions: [
-        'A construction decision this large is trust-led, not price-led — validated by founder interviews, where every closed client cited a site visit or a referral over price alone',
-        'Mobile-first, WhatsApp-first is non-negotiable for this audience — validated by the founders\' existing client base, who already reach them on WhatsApp',
-        'Vastu is not a niche ask but a default expectation across the target region — validated by founder experience and regional norms',
-        'District-level SEO matters more than broad national reach for a Tamil-Nadu-only, invitation-only-elsewhere firm — assumed, validated post-launch via Search Console once indexed',
+        'A construction decision this large is trust-led, not price-led - validated by founder interviews, where every closed client cited a site visit or a referral over price alone',
+        'Mobile-first, WhatsApp-first is non-negotiable for this audience - validated by the founders\' existing client base, who already reach them on WhatsApp',
+        'Vastu is not a niche ask but a default expectation across the target region - validated by founder experience and regional norms',
+        'District-level SEO matters more than broad national reach for a Tamil-Nadu-only, invitation-only-elsewhere firm - assumed, validated post-launch via Search Console once indexed',
       ],
     },
 
@@ -2564,7 +2564,7 @@ The packages page exists because the same four or five pricing questions came up
         name: 'Informal local contractors',
         strengths: 'Deep local trust, flexible verbal negotiation, lower quoted starting price, physically present in the village/town',
         weaknesses: 'No structural drawings or engineering calculations, no fixed packages, no way to preview the finished home, timelines slip without documentation',
-        opportunities: 'Make engineering rigour and fixed-package transparency the entire value proposition — the thing informal contractors structurally cannot offer',
+        opportunities: 'Make engineering rigour and fixed-package transparency the entire value proposition - the thing informal contractors structurally cannot offer',
       },
       {
         name: 'Established regional construction firms',
@@ -2582,25 +2582,25 @@ The packages page exists because the same four or five pricing questions came up
 
     personas: [
       {
-        name: 'Meenakshi, 34 — The First-Time Homeowner',
-        goals: 'Build a ground-up family home in her home district that respects Vastu and will comfortably house three generations',
-        behaviours: 'Researches quietly for months before contacting anyone. Compares packages and reads every service page before reaching out. Trusts recommendations from family over ads.',
-        painPoints: 'Cannot tell from a phone call alone whether a builder actually does structural engineering or is estimating on the spot. Worried about being upsold once construction has already started.',
-        needs: 'Transparent, comparable packages; visible proof of real engineering process; a low-pressure way to make first contact',
+        name: 'The Prospective Client',
+        goals: 'Answer one question: can this studio design a home that reflects who I am?',
+        behaviours: 'Reads slowly, looks for evidence of philosophy and quality before scanning for contact details. Compares this studio quietly against others before reaching out.',
+        painPoints: 'Cannot tell from photos alone whether a firm actually understands them personally, or is running a template process behind a nice portfolio.',
+        needs: 'See the quality of completed work, understand the studio\'s philosophy and values, feel personally understood, find contact details without friction',
       },
       {
-        name: 'Arjun, 41 — The NRI Building From Abroad',
-        goals: 'Build a home in Tamil Nadu he can manage remotely, trusting photos and updates rather than daily site visits',
-        behaviours: 'Contacts on WhatsApp because time zones make calls hard. Wants weekly proof of progress, not just a final reveal. Reads the "Singapore-grade" positioning literally and checks whether the standards claims hold up.',
-        painPoints: 'History of remote-build horror stories from friends — vanished contractors, no documentation, silent months. Needs a paper trail he can review from another country.',
-        needs: 'Milestone-based payment structure spelled out clearly, weekly site updates as a stated commitment, WhatsApp as a real communication channel, not a nicety',
+        name: 'The Referral Visitor',
+        goals: 'Do a fast quality check after a friend mentioned the studio',
+        behaviours: 'Arrives with borrowed trust and low patience. Wants a quick visual impression, not a deep read. Will leave within seconds if the site does not confirm the referral was worth following up on.',
+        painPoints: 'Needs to confirm quality, project range, and geography almost instantly, and finds friction (forms, unclear navigation) disproportionately annoying given how low-commitment this visit is.',
+        needs: 'Quick visual impression of quality, a sense of the range of project types, confirmation NDC works in their geography, an easy way to get in touch',
       },
       {
-        name: 'Kavitha, 52 — The Renovator',
-        goals: 'Modernise and structurally reinforce a decades-old family home without losing what makes it feel like home',
-        behaviours: 'Less interested in the full turnkey package, more focused on the Renovation/Extension service specifically. Cautious about disruption to a home she still lives in.',
-        painPoints: 'Worried that a construction firm built around new-build packages will treat her renovation as an afterthought or apply the same process regardless of fit',
-        needs: 'A distinct renovation narrative that acknowledges sensitive, occupied-home construction rather than a repurposed new-build package',
+        name: 'The Professional Contact',
+        goals: 'Judge whether this studio is technically credible before referring work or engaging as a contractor, engineer, or vendor',
+        behaviours: 'Reads for scale, complexity, and technical rigour rather than aesthetics. Looks for evidence of active projects and real geography, not marketing language.',
+        painPoints: 'Generic architecture-portfolio copy reads as unproven to someone evaluating technical credibility, not emotional resonance.',
+        needs: 'Understand project scale and complexity, see the studio\'s technical rigour, confirm active projects in their geography, a direct contact route for business enquiries',
       },
     ],
 
@@ -2617,58 +2617,58 @@ The packages page exists because the same four or five pricing questions came up
         userAction: 'Reads Services and Packages pages to understand what "turnkey" actually includes',
         emotion: 'Trying to translate technical language (IS 456, foundation types) into what it means for their house',
         painPoint: 'Structural engineering vocabulary is unfamiliar and easy to skim past without absorbing the credibility signal it carries',
-        designOpportunity: 'Pair every technical claim with a plain-language consequence — "Isolated, combined, raft and pile foundations sized to geotech reports" next to "most contractors estimate, we engineer"',
+        designOpportunity: 'Pair every technical claim with a plain-language consequence - "Isolated, combined, raft and pile foundations sized to geotech reports" next to "most contractors estimate, we engineer"',
       },
       {
         stage: 'Evaluating proof',
-        userAction: 'Opens the Projects page — Stone One, Second Gear, Third Moon, Fourth Pillar',
+        userAction: 'Opens the Projects page - Stone One, Second Gear, Third Moon, Fourth Pillar',
         emotion: 'Looking for evidence the firm can actually deliver, not just talk about engineering',
-        painPoint: 'Several projects are still in progress with no finished photography — risk of the page reading as vapourware',
-        designOpportunity: 'Use labelled, time-of-day-accurate renders with an honest "rendered study — real shadows arrive with the build" caption, plus a visible in-progress status per project',
+        painPoint: 'Fourth Pillar is still in design, so it needs to sit on the page as active without reading as unfinished or vapourware',
+        designOpportunity: 'Document three completed projects with construction photography and drawings, and give Fourth Pillar an honest "in design" status rather than pretending it is finished',
       },
       {
         stage: 'Comparing packages',
         userAction: 'Reviews the four fixed packages by size and ₹/sq.ft rate',
         emotion: 'Wants a number to anchor a budget conversation without committing to a call yet',
-        painPoint: 'Construction pricing is usually opaque and negotiated verbally — a fixed table is unfamiliar and needs to feel trustworthy, not like a lowball teaser rate',
-        designOpportunity: 'Show the package most homeowners actually choose as a clear default ("the package most homeowners settle on — considered, not extravagant") rather than presenting four equal, undifferentiated tiers',
+        painPoint: 'Construction pricing is usually opaque and negotiated verbally - a fixed table is unfamiliar and needs to feel trustworthy, not like a lowball teaser rate',
+        designOpportunity: 'Show the package most homeowners actually choose as a clear default ("the package most homeowners settle on - considered, not extravagant") rather than presenting four equal, undifferentiated tiers',
       },
       {
         stage: 'First contact',
         userAction: 'Fills the enquiry form or taps "WhatsApp the founders" directly',
         emotion: 'Ready to talk, but wary of being handed off to a generic sales process',
         painPoint: 'A typical construction-lead form disappears into a CRM with no personal reply for days',
-        designOpportunity: 'Enquiry form pre-fills a WhatsApp message to Saran or Prabaharan directly — "no forms, no waiting" — with a stated reply commitment, usually within the hour or within a working day',
+        designOpportunity: 'Enquiry form pre-fills a WhatsApp message to Saran or Prabaharan directly - "no forms, no waiting" - with a stated reply commitment, usually within the hour or within a working day',
       },
       {
         stage: 'Committing',
         userAction: 'Reviews payment milestones and terms before signing',
         emotion: 'Needs certainty about what happens at each stage before handing over an advance',
-        painPoint: 'Construction payment structures are historically a major source of local-contractor distrust — partial payments with no matching visible progress',
+        painPoint: 'Construction payment structures are historically a major source of local-contractor distrust - partial payments with no matching visible progress',
         designOpportunity: 'Milestones tied explicitly to visible construction stages (foundation poured → structure cured → finishing → snag list cleared → handover) so payment and progress are never disconnected',
       },
     ],
 
     insights: {
-      key: `NDC doesn't sell houses — it sells the difference between an estimate and an engineering calculation, made visible to someone who has no way to check the engineering themselves. Every design decision on the site had to do one of two things: translate a technical credibility signal into something a first-time homeowner can feel, or remove a step between "interested" and "talking to a founder on WhatsApp."`,
+      key: `NDC doesn't sell houses - it sells the difference between an estimate and an engineering calculation, made visible to someone who has no way to check the engineering themselves. Every design decision on the site had to do one of two things: translate a technical credibility signal into something a first-time homeowner can feel, or remove a step between "interested" and "talking to a founder on WhatsApp."`,
       findings: [
-        'The strongest trust signal on the entire site isn\'t a testimonial — it\'s the founders\' own faces and titles ("Er. Saran Chezhiyan," "Er. Prabaharan Ramasamy") next to a construction-site photo. Naming the engineering credential explicitly mattered more than generic "About Us" copy.',
-        'Renders needed an honesty caption. Presenting an unfinished project\'s render as if it were a finished photo would have undercut trust the moment a client visited the actual site — "A rendered study. Real shadows arrive with the build" does the opposite: it turns transparency into a credibility signal.',
-        'The single highest-friction moment in any local-contractor relationship is payment timing. Spelling out milestone payments against visible construction stages up front — before any contract is signed — pre-empts the most common source of client anxiety.',
+        'The strongest trust signal on the entire site isn\'t a testimonial - it\'s the founders\' own faces and titles ("Er. Saran Chezhiyan," "Er. Prabaharan Ramasamy") next to a construction-site photo. Naming the engineering credential explicitly mattered more than generic "About Us" copy.',
+        'Renders needed an honesty caption. Presenting an unfinished project\'s render as if it were a finished photo would have undercut trust the moment a client visited the actual site - "A rendered study. Real shadows arrive with the build" does the opposite: it turns transparency into a credibility signal.',
+        'The single highest-friction moment in any local-contractor relationship is payment timing. Spelling out milestone payments against visible construction stages up front - before any contract is signed - pre-empts the most common source of client anxiety.',
         'A generic contact form was actively the wrong pattern for this business. Founders already work over WhatsApp with every existing client; making the enquiry flow open a pre-filled WhatsApp message instead of submitting into an inbox matched how the business actually operates, not how construction sites conventionally ask.',
-        'Vastu could not be treated as an add-on service without undermining the whole positioning. It needed to sit in the process narrative itself — "we integrate Vastu from the first line we draw" — not tucked into a services sub-page nobody reads.',
-        'District-level language (Kumbakonam, Thiruvarur, Marakkanam) mattered more for both SEO and trust than generic "Tamil Nadu" copy — a homeowner searching for a builder near their own town reads specificity as local credibility.',
+        'Vastu could not be treated as an add-on service without undermining the whole positioning. It needed to sit in the process narrative itself - "we integrate Vastu from the first line we draw" - not tucked into a services sub-page nobody reads.',
+        'District-level language (Kumbakonam, Thiruvarur, Marakkanam) mattered more for both SEO and trust than generic "Tamil Nadu" copy - a homeowner searching for a builder near their own town reads specificity as local credibility.',
       ],
     },
 
     informationArchitecture: {
       description:
-        'Seven primary sections plus a dedicated enquiry route — Home, About, Services (with three engineering sub-pages), Packages, Projects, Contact, Enquiry. Depth kept shallow: any service, package, or project is reachable in two clicks from the homepage. Enquiry is deliberately a separate, focused route from the general Contact page, because the two serve different intents — one is "tell me about your plot," the other is "I have a general question."',
+        'Seven primary sections plus a dedicated enquiry route - Home, About, Services (with three engineering sub-pages), Packages, Projects, Contact, Enquiry. Depth kept shallow: any service, package, or project is reachable in two clicks from the homepage. Enquiry is deliberately a separate, focused route from the general Contact page, because the two serve different intents - one is "tell me about your plot," the other is "I have a general question."',
       decisions: [
-        'Services split into three engineering-specific sub-pages (House Construction, Architectural Planning, Structural Design) rather than one long page — each is a distinct credibility argument and deserved its own URL for SEO and clarity',
-        'Packages given a top-level nav slot, not buried inside Services — pricing transparency is a primary differentiator, not supporting detail',
-        'Projects use a query-param pattern (?p=stone-one) rather than nested routes — kept the project detail view lightweight while remaining shareable and indexable per project',
-        'Enquiry separated from Contact — Enquiry captures plot/budget/timeline for a real quotation; Contact is the general "talk to a founder" WhatsApp/phone route',
+        'Services split into three engineering-specific sub-pages (House Construction, Architectural Planning, Structural Design) rather than one long page - each is a distinct credibility argument and deserved its own URL for SEO and clarity',
+        'Packages given a top-level nav slot, not buried inside Services - pricing transparency is a primary differentiator, not supporting detail',
+        'Projects use a query-param pattern (?p=stone-one) rather than nested routes - kept the project detail view lightweight while remaining shareable and indexable per project',
+        'Enquiry separated from Contact - Enquiry captures plot/budget/timeline for a real quotation; Contact is the general "talk to a founder" WhatsApp/phone route',
         'About carries the founder-origin story (AK Builders → NDC, the meaning behind the name) because trust in a year-old firm has to be built through people, not portfolio volume',
       ],
       hierarchy: [
@@ -2695,7 +2695,7 @@ The packages page exists because the same four or five pricing questions came up
         { label: 'Opens Enquiry route instead of Contact', type: 'action' as const },
         { label: 'Enters district, plot size, indicative budget, timeline', type: 'action' as const },
         { label: 'Adds optional notes on Vastu / family requirements', type: 'action' as const },
-        { label: 'Submits — WhatsApp opens with details pre-filled for the founders', type: 'action' as const },
+        { label: 'Submits - WhatsApp opens with details pre-filled for the founders', type: 'action' as const },
         { label: 'Founder replies personally, usually within a working day ✓', type: 'end' as const },
       ],
       error: [
@@ -2709,10 +2709,10 @@ The packages page exists because the same four or five pricing questions came up
 
     interactionDesign: {
       approach:
-        'Interactions stay quiet and considered, matching the "quietly luxurious" brand line — no countdown timers, no aggressive lead-capture modals. The site\'s job is to earn a WhatsApp tap, not to trap a visitor into a form. Key micro-interactions: a daylight-study time-of-day toggle on project renders, an in-progress vs. currently-highlighted status per project, and the WhatsApp deep-link that opens pre-filled rather than routing through a generic mail-to.',
+        'Interactions stay quiet and considered, matching the "quietly luxurious" brand line - no countdown timers, no aggressive lead-capture modals. The site\'s job is to earn a WhatsApp tap, not to trap a visitor into a form. Key micro-interactions: a daylight-study time-of-day toggle on project renders, an in-progress vs. currently-highlighted status per project, and the WhatsApp deep-link that opens pre-filled rather than routing through a generic mail-to.',
       decisions: [
-        'Enquiry and Contact both resolve to a pre-filled WhatsApp deep link, not a form-to-inbox submission — matches how the founders actually work',
-        '"Daylight study" toggle on project pages lets a visitor see a render at different times of day — golden hour, dusk, morning light — reinforcing that orientation and light were actually engineered, not decorative',
+        'Enquiry and Contact both resolve to a pre-filled WhatsApp deep link, not a form-to-inbox submission - matches how the founders actually work',
+        '"Daylight study" toggle on project pages lets a visitor see a render at different times of day - golden hour, dusk, morning light - reinforcing that orientation and light were actually engineered, not decorative',
         'Each project marked with its real status ("currently in design," "currently highlighted") rather than presenting every project as equally finished',
         'Package cards use a visible "most homeowners settle on this one" marker on the mid-tier package instead of four undifferentiated options',
         'Founders\' direct WhatsApp numbers surfaced at multiple points (Contact, Enquiry, footer) rather than gated behind a single funnel step',
@@ -2721,29 +2721,28 @@ The packages page exists because the same four or five pricing questions came up
 
     wireframes: {
       changes: [
-        'Packages started as a single long comparison table — split into four individual package cards with a shared spec row after early review made the table feel like a spreadsheet, not a considered offer',
-        'Services began as one long page — split into three sub-pages (House Construction, Architectural Planning, Structural Design) once it was clear each deserved its own SEO surface and its own credibility argument',
-        'Enquiry was originally folded into Contact — separated once it became clear the two serve different intents: a quotation request needs plot/budget/timeline fields; a general enquiry needs none of that friction',
-        'Project pages initially showed a single static render — the daylight time-of-day toggle was added once it became clear orientation and light were core engineering decisions worth demonstrating, not just describing',
+        'Packages started as a single long comparison table - split into four individual package cards with a shared spec row after early review made the table feel like a spreadsheet, not a considered offer',
+        'Services began as one long page - split into three sub-pages (House Construction, Architectural Planning, Structural Design) once it was clear each deserved its own SEO surface and its own credibility argument',
+        'Enquiry was originally folded into Contact - separated once it became clear the two serve different intents: a quotation request needs plot/budget/timeline fields; a general enquiry needs none of that friction',
+        'Project pages initially showed a single static render - the daylight time-of-day toggle was added once it became clear orientation and light were core engineering decisions worth demonstrating, not just describing',
         'Founder bios moved from a buried About sub-section to a visible position earlier in the trust-building journey, once it was clear their credentials were the single strongest trust signal on the site',
       ],
       reasoning:
-        'The structural decision underneath every screen was the same: this is a high-stakes, low-frequency purchase for someone who cannot personally verify the engineering claims being made. So the site had to do the work of translating "IS 456," "geotech reports," and "raft foundations" into something felt rather than just read — through founder faces, honest render captions, visible project status, and a payment structure tied to visible construction stages rather than abstract percentages.',
+        'The structural decision underneath every screen was the same: this is a high-stakes, low-frequency purchase for someone who cannot personally verify the engineering claims being made. So the site had to do the work of translating "IS 456," "geotech reports," and "raft foundations" into something felt rather than just read - through founder faces, honest render captions, visible project status, and a payment structure tied to visible construction stages rather than abstract percentages.',
       tradeoffs: [
-        'No finished project photography at launch — every project page leans on renders, clearly labelled, which is honest but weaker proof than a completed build would offer',
-        'No formal user testing pool — Tamil Nadu homeowners this early in a build decision are not an easy group to recruit for structured usability sessions, so validation leaned on founder domain knowledge and iterative review',
-        'Packages are presented as four fixed tiers for clarity, even though real projects (a clinic-and-home, a courtyard villa) clearly involve bespoke briefs beyond the standard tiers — "beyond the package" is flagged, but the nuance is necessarily secondary to a clean comparison table',
-        'WhatsApp-first contact assumes the visitor already has WhatsApp installed and comfortable — a reasonable bet for this market, but it does narrow the funnel for anyone who doesn\'t',
+        'No finished project photography at launch - every project page leans on renders, clearly labelled, which is honest but weaker proof than a completed build would offer',
+        'No formal user testing pool - Tamil Nadu homeowners this early in a build decision are not an easy group to recruit for structured usability sessions, so validation leaned on founder domain knowledge and iterative review',
+        'Packages are presented as four fixed tiers for clarity, even though real projects (a clinic-and-home, a courtyard villa) clearly involve bespoke briefs beyond the standard tiers - "beyond the package" is flagged, but the nuance is necessarily secondary to a clean comparison table',
+        'WhatsApp-first contact assumes the visitor already has WhatsApp installed and comfortable - a reasonable bet for this market, but it does narrow the funnel for anyone who doesn\'t',
       ],
     },
 
     designSystem: {
       colors: [
-        { name: 'Deep Forest', value: '#0A1A06', usage: 'Theme colour, dark backgrounds, primary brand tone' },
-        { name: 'Olive Signal', value: '#4A7A28', usage: 'Accent, active states, mask-icon brand mark' },
-        { name: 'Warm Ivory', value: '#F7F5EF', usage: 'Page background — warm, paper-like, not clinical white' },
-        { name: 'Charcoal Text', value: '#1E1E1E', usage: 'Primary text and headings' },
-        { name: 'Muted Sage', value: '#8A9A7E', usage: 'Secondary text, captions, quiet UI elements' },
+        { name: 'Forest Night', value: '#0A1F07', usage: 'Primary dark background. Rich and organic, unlike the sterile navy of corporate architecture sites' },
+        { name: 'Gold Accent', value: '#C8973A', usage: 'CTAs, highlights, decorative elements. Warm authority' },
+        { name: 'Forest Green', value: '#3D6B28', usage: 'Secondary actions and hover states' },
+        { name: 'Warm Paper', value: '#F5EDD8', usage: 'Light sections and card backgrounds. Aged paper warmth' },
       ],
       typography: [
         { level: 'Display (Cormorant Garamond)', size: '48–64px', weight: '500–600', lineHeight: '1.1' },
@@ -2751,19 +2750,20 @@ The packages page exists because the same four or five pricing questions came up
         { level: 'Body (DM Sans)', size: '15–16px', weight: '400', lineHeight: '1.6' },
         { level: 'Label / Meta (IBM Plex Mono)', size: '12–13px', weight: '400–500', lineHeight: '1.4' },
       ],
-      spacing: '8px base unit. Generous section padding to preserve the "quietly luxurious" pacing — no dense grids, deliberate white space around renders and founder photography.',
+      spacing: '8px base unit. Generous section padding to preserve a considered, unhurried pace - no dense grids, deliberate white space around renders and founder photography.',
       components: [
-        'Package Card — size (sq.ft), ₹/sq.ft rate, inclusions list, "most homeowners settle on this one" marker',
-        'Project Card — hero render, status badge (currently highlighted / currently in design), district and plot type',
-        'Daylight Study Toggle — time-of-day selector on project renders (morning / golden hour / dusk)',
-        'Founder Bio Block — photo, name with engineering title, role (Construction & Operations / Architecture & Design)',
-        'Milestone Timeline — construction stages mapped to payment milestones (foundation → structure → finishing → handover)',
-        'Enquiry Form — district, plot size (optional), indicative budget, timeline, optional notes',
-        'WhatsApp CTA — deep-link button that opens a pre-filled message, used consistently across Contact, Enquiry, and footer',
-        'Service Spec Row — technical claim paired with plain-language consequence (e.g. IS 456 calculation → "engineered, not estimated")',
+        'Daylight Study Toggle - Morning / Golden Hour / Twilight, lets a visitor experience the same building in different light',
+        'Horizontal Project Reel - draggable, sequential project browsing with a scroll-progress indicator, in place of a static grid',
+        'Tamil Script Watermark - நந்தினி rendered vertically at low opacity in every hero, a quiet tribute rather than a design flourish',
+        'WhatsApp FAB - fixed floating action button with a pulse animation and a pre-filled message, the studio\'s primary conversion path',
+        'Blueprint Grid Background - a faint CSS grid pattern behind hero sections, referencing the profession without announcing it',
+        'Custom Animated Cursor - dot-and-ring cursor reinforcing the considered, designed feel of the site',
+        'Package Card - size (sq.ft), ₹/sq.ft rate, inclusions list, "most homeowners settle on this one" marker',
+        'Founder Bio Block - photo, name, role (Construction & Operations / Architecture & Design)',
+        'Enquiry Form - district, plot size (optional), indicative budget, timeline, optional notes',
       ],
       accessibilityRules: [
-        'Colour contrast checked against the deep forest / olive palette for WCAG AA on all text and CTA states',
+        'Colour contrast checked against the Forest Night / Gold Accent palette for WCAG AA on all text and CTA states',
         'WhatsApp CTA and enquiry buttons use descriptive text, not icon-only or "click here" patterns',
         'Form fields use visible above-field labels, not placeholder-only text',
         'Render captions and status badges use text, not colour alone, to indicate a project\'s completion state',
@@ -2775,11 +2775,12 @@ The packages page exists because the same four or five pricing questions came up
         'All WhatsApp and phone CTAs use descriptive link text so screen reader users know exactly what action they trigger',
         'Skip-to-content link implemented site-wide for keyboard and screen reader navigation',
         'Form fields carry explicit labels and required-field indicators, not placeholder-only text',
-        'Colour contrast validated against the deep forest / warm ivory palette across all text sizes',
+        'Colour contrast validated against the Forest Night / Warm Paper palette across all text sizes',
         'Render vs. real-photo status communicated in text captions, not through colour or iconography alone',
+        'Custom cursor and pulse animations respect prefers-reduced-motion',
       ],
       implementation:
-        'Implemented directly in the shipped React build — this was a live, single-developer project rather than a wireframe handoff, so accessibility was addressed in code (semantic HTML, labelled forms, skip links) rather than only annotated for a separate dev team.',
+        'Implemented directly in the shipped React build by the NicheUX team, so accessibility was addressed in code (semantic HTML, labelled forms, skip links, reduced-motion handling) rather than only annotated for a separate dev team.',
     },
 
     usabilityTesting: {
@@ -2789,7 +2790,7 @@ The packages page exists because the same four or five pricing questions came up
         'Confirm the WhatsApp-first contact pattern feels trustworthy rather than informal or unprofessional',
         'Check that in-progress project renders read as honest, not misleading',
       ],
-      participants: 'Iterative review with both NDC founders across the build; no formal external usability panel — a new firm with no existing client base to recruit testers from',
+      participants: 'Iterative review with both NDC founders across the build; no formal external usability panel - a new firm with no existing client base to recruit testers from',
       tasks: [
         'Find out what "turnkey" actually includes without reading every services sub-page',
         'Compare the four construction packages and identify which one fits a mid-size family home',
@@ -2797,10 +2798,10 @@ The packages page exists because the same four or five pricing questions came up
         'Start an enquiry and reach a founder directly',
       ],
       findings: [
-        'Founders flagged that early services copy leaned too technical — revised to pair every technical claim with a plain-language outcome',
-        'Without a clear default, all four packages initially read as equally weighted — added a "most homeowners settle on this one" marker to the mid-tier package',
+        'Founders flagged that early services copy leaned too technical - revised to pair every technical claim with a plain-language outcome',
+        'Without a clear default, all four packages initially read as equally weighted - added a "most homeowners settle on this one" marker to the mid-tier package',
         '"Pan Tamil Nadu, and beyond by invitation" needed to be visible on the Services page, not buried in Contact, so NRI and out-of-state visitors don\'t bounce before finding it',
-        'Early project pages using only a single static render felt less convincing than intended — the daylight time-of-day toggle was added to demonstrate orientation and light as real engineering decisions',
+        'Early project pages using only a single static render felt less convincing than intended - the daylight time-of-day toggle was added to demonstrate orientation and light as real engineering decisions',
       ],
       iterations: [
         'Rewrote service descriptions to pair every technical/engineering claim with a plain-language consequence',
@@ -2813,12 +2814,12 @@ The packages page exists because the same four or five pricing questions came up
 
     edgeCases: {
       emptyStates: [
-        'Project with no finished photography yet: shown as a labelled render with "a rendered study — real shadows arrive with the build," never presented as a finished photo',
+        'Fourth Pillar, still in design: shown with an honest "in design" status, will be added to the project reel in full once construction completes',
         'Enquiry submitted with no plot size given: form treats plot size as optional and routes to WhatsApp regardless, since founders can gather it in conversation',
       ],
       loadingStates: [
         'Project render images use aspect-ratio-preserving placeholders while loading on slower rural/semi-urban connections',
-        'WhatsApp deep-link opens immediately on tap with no intermediate loading screen — kept the highest-intent action instant',
+        'WhatsApp deep-link opens immediately on tap with no intermediate loading screen - kept the highest-intent action instant',
       ],
       errorMessages: [
         'Enquiry form: required fields (name, phone) clearly marked; optional fields (plot size, notes) explicitly labelled optional so users aren\'t blocked by fields they can\'t yet answer',
@@ -2832,21 +2833,21 @@ The packages page exists because the same four or five pricing questions came up
 
     outcome: {
       metrics: [
-        'Full site shipped and live across 8 routes: Home, About, Services (×3), Packages, Projects (×4), Contact, Enquiry',
-        'Schema.org GeneralContractor structured data implemented for local SEO, including founder, service area, and contact markup',
-        'Four construction packages presented with transparent, comparable ₹/sq.ft pricing',
-        'Four real client projects represented — Stone One, Second Gear, Third Moon, Fourth Pillar — across three Tamil Nadu districts',
-        'WhatsApp-first contact flow implemented consistently across Contact, Enquiry, and footer touchpoints',
+        '98/100 on Google PageSpeed Insights, optimised React performance, lazy-loaded portfolio images, smooth scroll interactions',
+        '3.1s time to interactive on 4G, the daylight toggle and horizontal reel load without blocking page interaction',
+        'WhatsApp FAB is the primary CTA and drives the majority of inbound enquiries from professional networks in Tamil Nadu and beyond',
+        'Four named projects live across three districts, each documented with construction photography and architectural drawings',
+        'Schema.org structured data implemented for local SEO, including founder, service area, and contact markup',
       ],
-      impact: `The site is live at nandhinidc.in and is the primary digital front door for a construction firm that, before this, had none. Every enquiry now arrives pre-qualified — district, plot size, budget band, timeline — before a founder opens WhatsApp, which was the actual operational goal: not more leads, but better-qualified conversations that respect two founders' limited time.
+      impact: `The site is live at nandhinidc.in and is the primary digital front door for the studio. The daylight toggle is the first thing most visitors engage with. The horizontal reel keeps them moving through the portfolio the way they would move through a house, one room at a time. The Tamil watermark is noticed by everyone and understood by fewer, which is exactly the design intention.
 
-I'm including this case because it's a different kind of design problem than a typical e-commerce or SaaS case study — a high-stakes, low-frequency, trust-led purchase for an audience that mostly can't evaluate the technical claims being made on their behalf. The design work here was less about visual polish and more about translation: turning "IS 456 structural calculations" into something a first-time homeowner can feel confident betting their savings on.`,
+Saran and the team reviewed the finished site as "exceptional," noting it exceeded expectations and that the presentation quality impressed the wider studio team. That reaction mattered more to me than the PageSpeed score: a studio built around Vastu and inherited meaning needed a site that felt considered in the same way its buildings are, not just fast and functional.`,
       learnings: [
-        'For a brand-new firm with no completed-project archive, founder credibility has to carry more weight than portfolio volume — and the site design should say so plainly rather than trying to look more established than the firm actually is.',
-        'Matching the contact mechanism to how the business actually operates (WhatsApp, not a CRM) mattered more than following e-commerce contact-form conventions.',
-        'Honesty about in-progress work — labelled renders, visible project status — builds more trust than presenting an aspirational, misleadingly finished picture.',
-        'A construction business\'s biggest trust obstacle is payment timing, not price — tying milestones explicitly to visible construction stages does more for conversion than any pricing discount would.',
-        'District-level specificity beats broad regional claims, both for SEO and for the felt sense of local credibility that this audience is actually looking for.',
+        'A studio built around a philosophy (Vastu, in this case) needs that philosophy embedded in the interaction design itself, not just described in copy. The daylight toggle does more work than any paragraph explaining "we think about light" would.',
+        'Matching the contact mechanism to how the business actually operates (WhatsApp, not a form) mattered more than following portfolio-site contact-form conventions.',
+        'A signature interaction earns its place by being load-bearing, not decorative. The daylight toggle only worked because it reflected a real Vastu principle: light as a material of design.',
+        'Meaning that visitors do not consciously register, like a family name in a watermark, still shapes how a site feels. Not every design decision needs to be explained to work.',
+        'Performance and craft are not a trade-off when handled early: 98/100 PageSpeed alongside custom cursor and scroll animations came from treating performance budgets as a design constraint, not an afterthought.',
       ],
     },
 

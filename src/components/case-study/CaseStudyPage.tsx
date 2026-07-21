@@ -1289,8 +1289,8 @@ const InformationArchitectureDiagram = ({ project }: { project: Project }) => {
         color: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600 dark:border-emerald-600 text-emerald-900 dark:text-emerald-300',
         items: [
           'Max 2 clicks from home to any service, package, or project',
-          'Packages given a top-level nav slot — pricing transparency is a differentiator, not fine print',
-          'Enquiry kept separate from Contact — a quotation request needs different fields than a general question',
+          'Packages given a top-level nav slot, pricing transparency is a differentiator, not fine print',
+          'Enquiry kept separate from Contact, a quotation request needs different fields than a general question',
           'Services split into 3 sub-pages so each engineering discipline earns its own SEO surface',
         ],
       },
@@ -1300,7 +1300,7 @@ const InformationArchitectureDiagram = ({ project }: { project: Project }) => {
         items: [
           'Services: 3 sub-pages (House Construction, Architectural Planning, Structural Design)',
           'Packages: 4 fixed tiers, ₹/sq.ft comparable',
-          'Projects: 4 real client builds across 3 Tamil Nadu districts',
+          'Projects: 4 named builds across 3 Tamil Nadu districts, one still in design',
           'Conversion routes: Contact (general) + Enquiry (quotation, WhatsApp-first)',
         ],
       },
@@ -1308,9 +1308,9 @@ const InformationArchitectureDiagram = ({ project }: { project: Project }) => {
         title: 'Identified Gaps',
         color: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600 dark:border-emerald-600 text-emerald-900 dark:text-emerald-300',
         items: [
-          'No finished photography for 3 of 4 projects — renders carry the proof, clearly labelled',
-          'No in-app booking for the ₹10,000 Layout consultation — phone only at this stage',
-          'Package tiers presented as fixed, though real briefs are often bespoke — flagged via "beyond the package"',
+          'Fourth Pillar still in design, needs an honest status rather than reading as unfinished',
+          'No in-app booking for consultation calls, phone only at this stage',
+          'Package tiers presented as fixed, though real briefs are often bespoke, flagged via "beyond the package"',
         ],
       },
     ];
@@ -1481,7 +1481,7 @@ const JourneyMaps = ({ project }: { project: Project }) => {
           <div className="evidence-board p-4 md:p-6">
             <div className="flex flex-wrap items-center gap-3 mb-4 border-b border-accent/30 pb-4">
               <MapPin className="w-4 h-4 flex-shrink-0 text-emerald-600" />
-              <span className="text-xs font-mono uppercase tracking-wider text-emerald-600 font-semibold">USER JOURNEY MAP: MEENAKSHI · ARJUN · KAVITHA</span>
+              <span className="text-xs font-mono uppercase tracking-wider text-emerald-600 font-semibold">USER JOURNEY MAP: PROSPECTIVE CLIENT · REFERRAL VISITOR · PROFESSIONAL CONTACT</span>
               <EvidenceTag label="EXHIBIT C" variant="exhibit" />
             </div>
             <div className="relative bg-white p-3 md:p-4 rounded-sm overflow-hidden cursor-zoom-in group" onClick={() => { setModalImage(src); setModalTitle('User Journey Map: Nandhini Design Constructions'); }}>
@@ -1494,7 +1494,7 @@ const JourneyMaps = ({ project }: { project: Project }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <p className="text-xs font-bold text-rose-600 mb-3">Recurring Pain Points</p>
-                <ul className="text-xs space-y-1.5 text-foreground/80">{['No prior reason to trust a firm founded in 2025 over a known local contractor','Structural engineering vocabulary easy to skim past without absorbing the credibility signal','Most projects still in progress, no finished photography to point to','Fixed-price packages feel unfamiliar against verbal-quote norms','A typical lead form disappears into a CRM with no personal reply'].map(p => <li key={p}>→ {p}</li>)}</ul>
+                <ul className="text-xs space-y-1.5 text-foreground/80">{['No prior reason to trust a young studio over a known local contractor','Vastu and structural vocabulary easy to skim past without absorbing the credibility signal','Fourth Pillar still in design, risk of the projects page reading as unfinished','Fixed-price packages feel unfamiliar against verbal-quote norms','A typical lead form disappears into a CRM with no personal reply'].map(p => <li key={p}>→ {p}</li>)}</ul>
               </div>
               <div>
                 <p className="text-xs font-bold text-emerald-600 mb-3">High-Impact Opportunities</p>
@@ -2194,7 +2194,7 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                 <section id="journeys" ref={setSectionRef('journeys')} className="case-section scroll-mt-56" role="tabpanel">
                   <div className="flex items-center gap-4 mb-8"><MapPin className="w-4 h-4 text-emerald-600 flex-shrink-0" /><span className="text-[11px] font-mono uppercase tracking-[0.3em] text-emerald-600 font-semibold">THE JOURNEY</span><div className="flex-1 h-px bg-emerald-600/40" /></div>
                   <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-8 md:mb-12">
-                    {isFurnore ? 'User Journey Map: 3 Personas' : isKishore ? 'User Journey Map: Alex (Sports Academy Director)' : isOpes ? 'User Journey Map: Priya and 2 Personas' : isNDC ? 'User Journey Map: Meenakshi, Arjun and Kavitha' : 'User Journey Map'}
+                    {isFurnore ? 'User Journey Map: 3 Personas' : isKishore ? 'User Journey Map: Alex (Sports Academy Director)' : isOpes ? 'User Journey Map: Priya and 2 Personas' : isNDC ? 'User Journey Map: 3 Visitor Types' : 'User Journey Map'}
                   </h2>
                   <JourneyMaps project={project} />
                 </section>
@@ -2221,7 +2221,7 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                       <p className="section-label mb-2 text-accent">COLOR PALETTE: THE EVIDENCE</p>
                       {(isFurnore || isKishore || isOpes || isNDC) && (
                         <p className="text-xs text-muted-foreground mb-4 italic border-l-2 border-accent/30 pl-3">
-                          {isFurnore ? "Furnore's product design system defined for the live website. Not this portfolio's colour palette." : isKishore ? "K29 Portfolio design system: dark theme with dual-career colour coding. Not this portfolio's palette." : isOpes ? "OPES landing page design system: burgundy brand palette specified by the client." : "NDC's live brand system: deep forest and olive, pulled directly from the shipped site's theme colours and font imports. Not this portfolio's palette."}
+                          {isFurnore ? "Furnore's product design system defined for the live website. Not this portfolio's colour palette." : isKishore ? "K29 Portfolio design system: dark theme with dual-career colour coding. Not this portfolio's palette." : isOpes ? "OPES landing page design system: burgundy brand palette specified by the client." : "NDC's live brand system: Forest Night and Gold Accent, pulled directly from the shipped site. Not this portfolio's palette."}
                         </p>
                       )}
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">

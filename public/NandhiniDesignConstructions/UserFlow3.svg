@@ -1,44 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" font-family="'DM Sans', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 260" font-family="'DM Sans', Arial, sans-serif">
   <defs>
     <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#1E1E1E"/>
     </marker>
   </defs>
-  <rect x="0" y="0" width="1200" height="220" fill="#ffffff"/>
-  <text x="20" y="26" font-size="12" font-weight="700" fill="#8A9A7E" font-family="'IBM Plex Mono', monospace">ERROR / UNCERTAINTY FLOW · SERVICEABILITY OUTSIDE TAMIL NADU</text>
+  <rect x="0" y="0" width="1240" height="260" fill="#ffffff"/>
+  <text x="20" y="26" font-size="12" font-weight="700" fill="#8A8A8A" font-family="'IBM Plex Mono', monospace">UNCERTAINTY FLOW: SERVICEABILITY OUTSIDE TAMIL NADU</text>
 
   <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow3)">
-    <line x1="260" y1="105" x2="285" y2="105"/>
-    <line x1="495" y1="105" x2="520" y2="105"/>
-    <line x1="730" y1="105" x2="755" y2="105"/>
-    <line x1="965" y1="105" x2="990" y2="105"/>
+    <line x1="260" y1="120" x2="285" y2="120"/>
+    <line x1="510" y1="120" x2="535" y2="120"/>
+    <line x1="760" y1="120" x2="785" y2="120"/>
+    <line x1="1000" y1="120" x2="1025" y2="120"/>
   </g>
 
   <!-- 1 start -->
-  <rect x="25" y="55" width="235" height="100" rx="50" fill="#4A7A28"/>
-  <text x="142" y="98" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">01 · Visitor is outside</text>
-  <text x="142" y="114" text-anchor="middle" fill="#F7F5EF" font-size="10">Tamil Nadu (NRI / other state)</text>
+  <rect x="20" y="65" width="240" height="110" rx="55" fill="#3D6B28"/>
+  <text x="140" y="112" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">01 Visitor is outside</text>
+  <text x="140" y="130" text-anchor="middle" fill="#F5EDD8" font-size="10">Tamil Nadu</text>
 
   <!-- 2 action -->
-  <rect x="285" y="55" width="235" height="100" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
-  <text x="402" y="90" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">02 · Reads "pan Tamil</text>
-  <text x="402" y="106" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">Nadu, and beyond by</text>
-  <text x="402" y="122" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">invitation" on Services</text>
+  <rect x="285" y="65" width="225" height="110" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="397" y="105" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">02 Reads about</text>
+  <text x="397" y="123" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">service area on</text>
+  <text x="397" y="141" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">Services page</text>
 
-  <!-- 3 error -->
-  <rect x="520" y="55" width="235" height="100" fill="#fdecec" stroke="#B3402A" stroke-width="2" rx="4"/>
-  <text x="637" y="98" text-anchor="middle" fill="#B3402A" font-size="11" font-weight="700">03 · Uncertain if their</text>
-  <text x="637" y="114" text-anchor="middle" fill="#B3402A" font-size="11" font-weight="700">location is serviceable</text>
+  <!-- 3 uncertainty -->
+  <rect x="535" y="65" width="225" height="110" fill="#F5EDD8" stroke="#8A8A8A" stroke-width="2" rx="4"/>
+  <text x="647" y="112" text-anchor="middle" fill="#4D4D4D" font-size="11" font-weight="700">03 Uncertain if</text>
+  <text x="647" y="130" text-anchor="middle" fill="#4D4D4D" font-size="11" font-weight="700">serviceable</text>
 
   <!-- 4 action -->
-  <rect x="755" y="55" width="235" height="100" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
-  <text x="872" y="90" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">04 · Proceeds to Enquiry</text>
-  <text x="872" y="106" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">anyway, states district /</text>
-  <text x="872" y="122" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">location</text>
+  <rect x="785" y="65" width="215" height="110" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="892" y="105" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">04 Proceeds to</text>
+  <text x="892" y="123" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">Enquiry, states</text>
+  <text x="892" y="141" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">location</text>
 
   <!-- 5 end -->
-  <rect x="990" y="55" width="185" height="100" fill="#0A1A06" stroke="#4A7A28" stroke-width="3" rx="4"/>
-  <text x="1082" y="94" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">05 · Founder</text>
-  <text x="1082" y="110" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">clarifies over</text>
-  <text x="1082" y="126" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">WhatsApp ✓</text>
+  <rect x="1025" y="65" width="195" height="110" fill="#0A1F07" rx="4"/>
+  <text x="1122" y="112" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">05 Founder</text>
+  <text x="1122" y="130" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">clarifies over</text>
+  <text x="1122" y="148" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">WhatsApp</text>
 </svg>
