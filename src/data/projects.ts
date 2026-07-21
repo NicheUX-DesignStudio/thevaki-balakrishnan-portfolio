@@ -771,12 +771,12 @@ liveUrl: 'https://bloomandbrewcoffeecompany.ca/'
 
     role: 'UX Designer (Waitlist Landing Page)',
     duration: '3 weeks',
-    team: 'Freelance — client referred via LinkedIn',
+    team: 'Freelance — client referred through a friend',
     tools: ['Figma', 'FigJam'],
     outcomeSummary:
       'Single-page landing designed to convert anonymous visitors into Founding Users through trust-building hierarchy and a clear, low-friction sign-up flow.',
 
-    context: `OPES is an AI-powered financial advisor built for people who don't have the time, knowledge, or resources to manage their own finances — but still want to hit real milestones like buying a home, retiring early, or simply spending smarter. The client came to me via a LinkedIn referral before any development had started. The brief was simple: design a landing page that captures early-access emails and communicates the product's value to everyday people — waiters, shop workers, gig workers — not finance professionals.
+    context: `OPES is an AI-powered financial advisor built for people who don't have the time, knowledge, or resources to manage their own finances — but still want to hit real milestones like buying a home, retiring early, or simply spending smarter. The client came to me through a friend's referral before any development had started. The brief was simple: design a landing page that captures early-access emails and communicates the product's value to everyday people — waiters, shop workers, gig workers — not finance professionals.
 
 The product didn't exist yet. There was no app to screenshot, no testimonials to pull, no data to cite. Everything on the page had to earn trust through design alone.`,
 
