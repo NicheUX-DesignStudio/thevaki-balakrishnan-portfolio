@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 900" font-family="'DM Sans', Arial, sans-serif">
+  <defs>
+    <pattern id="hatchHome" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#B8B8B8" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect x="0.5" y="0.5" width="374" height="899" fill="#ffffff" stroke="#1E1E1E"/>
+
+  <!-- nav -->
+  <text x="16" y="34" font-size="16" font-weight="700" fill="#1E1E1E">NDC</text>
+  <g stroke="#1E1E1E" stroke-width="2"><line x1="330" y1="20" x2="358" y2="20"/><line x1="330" y1="28" x2="358" y2="28"/><line x1="330" y1="36" x2="358" y2="36"/></g>
+  <line x1="0" y1="56" x2="375" y2="56" stroke="#E0E0E0"/>
+
+  <!-- hero -->
+  <rect x="0" y="56" width="375" height="230" fill="url(#hatchHome)" stroke="#B8B8B8"/>
+  <rect x="40" y="150" width="295" height="14" fill="#1E1E1E"/>
+  <rect x="70" y="172" width="235" height="14" fill="#1E1E1E"/>
+  <rect x="110" y="196" width="155" height="9" fill="#8A9A7E"/>
+  <rect x="87" y="310" width="200" height="44" rx="4" fill="#0A1A06"/>
+  <text x="187" y="337" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">WhatsApp the founders</text>
+
+  <!-- positioning line -->
+  <text x="187" y="392" text-anchor="middle" font-size="13" font-weight="700" fill="#1E1E1E">"We engineer, not estimate."</text>
+  <rect x="60" y="404" width="255" height="8" fill="#E0E0E0"/>
+
+  <!-- services teaser row -->
+  <g>
+    <rect x="16" y="432" width="105" height="88" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+    <rect x="46" y="452" width="45" height="30" fill="url(#hatchHome)"/>
+    <rect x="30" y="496" width="75" height="8" fill="#1E1E1E"/>
+
+    <rect x="135" y="432" width="105" height="88" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+    <rect x="165" y="452" width="45" height="30" fill="url(#hatchHome)"/>
+    <rect x="149" y="496" width="75" height="8" fill="#1E1E1E"/>
+
+    <rect x="254" y="432" width="105" height="88" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+    <rect x="284" y="452" width="45" height="30" fill="url(#hatchHome)"/>
+    <rect x="268" y="496" width="75" height="8" fill="#1E1E1E"/>
+  </g>
+  <text x="16" y="418" font-size="10" fill="#8A9A7E" font-family="'IBM Plex Mono', monospace">HOUSE · PLANNING · STRUCTURAL</text>
+
+  <!-- packages preview -->
+  <text x="16" y="552" font-size="13" font-weight="700" fill="#1E1E1E">Six honest packages.</text>
+  <g>
+    <rect x="16" y="566" width="165" height="100" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+    <rect x="30" y="580" width="90" height="9" fill="#1E1E1E"/>
+    <rect x="30" y="600" width="60" height="8" fill="#8A9A7E"/>
+    <rect x="30" y="644" width="70" height="12" fill="#C8A84B"/>
+
+    <rect x="194" y="566" width="165" height="100" rx="3" fill="#ffffff" stroke="#4A7A28" stroke-width="2"/>
+    <rect x="208" y="576" width="80" height="8" fill="#4A7A28"/>
+    <rect x="208" y="592" width="90" height="9" fill="#1E1E1E"/>
+    <rect x="208" y="612" width="60" height="8" fill="#8A9A7E"/>
+    <rect x="208" y="644" width="70" height="12" fill="#C8A84B"/>
+  </g>
+  <text x="208" y="588" font-size="7" fill="#4A7A28" font-weight="700">MOST CHOSEN</text>
+
+  <!-- projects preview -->
+  <text x="16" y="700" font-size="13" font-weight="700" fill="#1E1E1E">Four projects, three districts.</text>
+  <rect x="16" y="712" width="343" height="130" fill="url(#hatchHome)" stroke="#B8B8B8"/>
+  <rect x="26" y="722" width="90" height="18" fill="#0A1A06"/>
+  <text x="34" y="735" font-size="9" fill="#ffffff">01 STONE ONE</text>
+
+  <!-- footer -->
+  <line x1="0" y1="858" x2="375" y2="858" stroke="#E0E0E0"/>
+  <rect x="16" y="870" width="140" height="8" fill="#1E1E1E"/>
+  <rect x="16" y="884" width="200" height="8" fill="#8A9A7E"/>
+</svg>

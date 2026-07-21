@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 900" font-family="'DM Sans', Arial, sans-serif">
+  <rect x="0.5" y="0.5" width="374" height="899" fill="#ffffff" stroke="#1E1E1E"/>
+
+  <text x="16" y="34" font-size="16" font-weight="700" fill="#1E1E1E">‹ Enquiry</text>
+  <line x1="0" y1="56" x2="375" y2="56" stroke="#E0E0E0"/>
+  <text x="16" y="86" font-size="15" font-weight="700" fill="#1E1E1E">Tell us where home is.</text>
+  <text x="16" y="104" font-size="10" fill="#8A9A7E">No forms that vanish. Straight to WhatsApp.</text>
+
+  <!-- name -->
+  <text x="16" y="136" font-size="9.5" font-weight="700" fill="#1E1E1E">Your name *</text>
+  <rect x="16" y="144" width="343" height="38" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+
+  <!-- phone -->
+  <text x="16" y="200" font-size="9.5" font-weight="700" fill="#1E1E1E">Phone number *</text>
+  <rect x="16" y="208" width="343" height="38" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+
+  <!-- district -->
+  <text x="16" y="264" font-size="9.5" font-weight="700" fill="#1E1E1E">District in Tamil Nadu *</text>
+  <rect x="16" y="272" width="343" height="38" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+  <text x="330" y="296" font-size="10" fill="#8A9A7E">▾</text>
+
+  <!-- plot size -->
+  <text x="16" y="328" font-size="9.5" fill="#8A9A7E">Plot size (sq.ft, optional)</text>
+  <rect x="16" y="336" width="343" height="38" rx="3" fill="#ffffff" stroke="#8A9A7E" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- budget -->
+  <text x="16" y="392" font-size="9.5" font-weight="700" fill="#1E1E1E">Indicative budget</text>
+  <rect x="16" y="400" width="343" height="38" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+
+  <!-- timeline -->
+  <text x="16" y="456" font-size="9.5" font-weight="700" fill="#1E1E1E">Timeline</text>
+  <rect x="16" y="464" width="343" height="38" rx="3" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+
+  <!-- notes -->
+  <text x="16" y="520" font-size="9.5" fill="#8A9A7E">Tell us more (optional)</text>
+  <rect x="16" y="528" width="343" height="70" rx="3" fill="#ffffff" stroke="#8A9A7E" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- consent -->
+  <rect x="16" y="616" width="16" height="16" fill="#ffffff" stroke="#1E1E1E" stroke-width="1.5"/>
+  <text x="40" y="629" font-size="8.5" fill="#8A9A7E">We read every brief personally. Your details</text>
+  <text x="40" y="641" font-size="8.5" fill="#8A9A7E">are never shared.</text>
+
+  <!-- submit -->
+  <rect x="16" y="666" width="343" height="48" rx="4" fill="#0A1A06"/>
+  <text x="187" y="695" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">Send via WhatsApp</text>
+
+  <text x="187" y="738" text-anchor="middle" font-size="9" fill="#8A9A7E">Saran or Prabaharan reply personally,</text>
+  <text x="187" y="752" text-anchor="middle" font-size="9" fill="#8A9A7E">usually within a working day.</text>
+
+  <!-- alt route -->
+  <line x1="16" y1="784" x2="359" y2="784" stroke="#E0E0E0"/>
+  <text x="187" y="808" text-anchor="middle" font-size="9.5" fill="#1E1E1E">Prefer to talk now?</text>
+  <rect x="87" y="820" width="200" height="40" rx="4" fill="#ffffff" stroke="#4A7A28" stroke-width="2"/>
+  <text x="187" y="845" text-anchor="middle" fill="#4A7A28" font-size="11" font-weight="700">Chat with NDC on WhatsApp</text>
+</svg>

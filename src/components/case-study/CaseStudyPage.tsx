@@ -1160,11 +1160,13 @@ const InformationArchitectureDiagram = ({ project }: { project: Project }) => {
   const isFurnore = project.id === 'furnore';
   const isOpes = project.id === 'opes';
   const isKishore = project.id === 'kishore-portfolio';
+  const isNDC = project.id === 'nandhini-design-constructions';
 
   const getImgSrc = () => {
     if (isFurnore) return '/Furnore/InformationArchitecture.png';
     if (isOpes) return '/OPES/InformationArchitecture.png';
     if (isKishore) return "/Kishore%27sPortfolioWebsite/InformationArchitecture.png";
+    if (isNDC) return '/NandhiniDesignConstructions/InformationArchitecture.svg';
     // FIXED: Use the exact filename without URL encoding
     return '/Bloom-Brew/InformationArchitectureB&B.png';
   };
@@ -1281,6 +1283,38 @@ const InformationArchitectureDiagram = ({ project }: { project: Project }) => {
       },
     ];
 
+    if (isNDC) return [
+      {
+        title: 'Structure Decisions',
+        color: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600 dark:border-emerald-600 text-emerald-900 dark:text-emerald-300',
+        items: [
+          'Max 2 clicks from home to any service, package, or project',
+          'Packages given a top-level nav slot — pricing transparency is a differentiator, not fine print',
+          'Enquiry kept separate from Contact — a quotation request needs different fields than a general question',
+          'Services split into 3 sub-pages so each engineering discipline earns its own SEO surface',
+        ],
+      },
+      {
+        title: 'Page Count',
+        color: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600 dark:border-emerald-600 text-emerald-900 dark:text-emerald-300',
+        items: [
+          'Services: 3 sub-pages (House Construction, Architectural Planning, Structural Design)',
+          'Packages: 4 fixed tiers, ₹/sq.ft comparable',
+          'Projects: 4 real client builds across 3 Tamil Nadu districts',
+          'Conversion routes: Contact (general) + Enquiry (quotation, WhatsApp-first)',
+        ],
+      },
+      {
+        title: 'Identified Gaps',
+        color: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600 dark:border-emerald-600 text-emerald-900 dark:text-emerald-300',
+        items: [
+          'No finished photography for 3 of 4 projects — renders carry the proof, clearly labelled',
+          'No in-app booking for the ₹10,000 Layout consultation — phone only at this stage',
+          'Package tiers presented as fixed, though real briefs are often bespoke — flagged via "beyond the package"',
+        ],
+      },
+    ];
+
     return [
       {
         title: 'Design Decisions',
@@ -1359,6 +1393,13 @@ const UserFlowDiagrams = ({ project }: { project: Project }) => {
   const isFurnore = project.id === 'furnore';
   const isOpes = project.id === 'opes';
   const isKishore = project.id === 'kishore-portfolio';
+  const isNDC = project.id === 'nandhini-design-constructions';
+
+  const ndcFlows = [
+    { label: 'PRIMARY FLOW: Homepage to WhatsApp Enquiry', desc: 'Land on homepage, read positioning, review services and packages, view a project, tap WhatsApp the founders, send', color: 'text-emerald-600 border-emerald-600/40 bg-emerald-600/5', accent: 'text-emerald-600', src: '/NandhiniDesignConstructions/UserFlow1.svg' },
+    { label: 'EDGE CASE: Formal Quotation via Enquiry', desc: 'Homeowner wants a written quote, uses the dedicated Enquiry route with plot, budget and timeline fields', color: 'text-amber-600 border-amber-600/40 bg-amber-600/5', accent: 'text-amber-600', src: '/NandhiniDesignConstructions/UserFlow2.svg' },
+    { label: 'ERROR / UNCERTAINTY: Serviceability Outside Tamil Nadu', desc: 'NRI or out-of-state visitor unsure if NDC builds where they are, resolved via a direct WhatsApp reply', color: 'text-rose-600 border-rose-600/40 bg-rose-600/5', accent: 'text-rose-600', src: '/NandhiniDesignConstructions/UserFlow3.svg' },
+  ];
 
   const furnoreFlows = [
     { label: 'FLOW 01: Browse and Purchase', desc: 'Landing page to Category to Product Detail to Cart to Payment to Order placed', color: 'text-accent border-accent/40 bg-accent/5', accent: 'text-accent', src: '/Furnore/UserFlow1.png' },
@@ -1388,6 +1429,7 @@ const UserFlowDiagrams = ({ project }: { project: Project }) => {
     if (isFurnore) return furnoreFlows;
     if (isOpes) return opesFlows;
     if (isKishore) return kishoreFlows;
+    if (isNDC) return ndcFlows;
     return bbFlows;
   };
 
@@ -1429,6 +1471,42 @@ const JourneyMaps = ({ project }: { project: Project }) => {
   const isFurnore = project.id === 'furnore';
   const isOpes = project.id === 'opes';
   const isKishore = project.id === 'kishore-portfolio';
+  const isNDC = project.id === 'nandhini-design-constructions';
+
+  if (isNDC) {
+    const src = '/NandhiniDesignConstructions/UserJourneyMapping.svg';
+    return (
+      <>
+        <div className="space-y-6">
+          <div className="evidence-board p-4 md:p-6">
+            <div className="flex flex-wrap items-center gap-3 mb-4 border-b border-accent/30 pb-4">
+              <MapPin className="w-4 h-4 flex-shrink-0 text-emerald-600" />
+              <span className="text-xs font-mono uppercase tracking-wider text-emerald-600 font-semibold">USER JOURNEY MAP: MEENAKSHI · ARJUN · KAVITHA</span>
+              <EvidenceTag label="EXHIBIT C" variant="exhibit" />
+            </div>
+            <div className="relative bg-white p-3 md:p-4 rounded-sm overflow-hidden cursor-zoom-in group" onClick={() => { setModalImage(src); setModalTitle('User Journey Map: Nandhini Design Constructions'); }}>
+              <img src={src} alt="User Journey Map" className="w-full h-auto" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><ZoomIn className="w-12 h-12 text-accent" /></div>
+            </div>
+          </div>
+          <div className="p-4 md:p-6 bg-surface border-2 border-emerald-600/30 rounded-sm">
+            <p className="text-xs font-mono uppercase tracking-wider text-emerald-600 font-semibold mb-4">CROSS-JOURNEY SYNTHESIS</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <p className="text-xs font-bold text-rose-600 mb-3">Recurring Pain Points</p>
+                <ul className="text-xs space-y-1.5 text-foreground/80">{['No prior reason to trust a firm founded in 2025 over a known local contractor','Structural engineering vocabulary easy to skim past without absorbing the credibility signal','Most projects still in progress, no finished photography to point to','Fixed-price packages feel unfamiliar against verbal-quote norms','A typical lead form disappears into a CRM with no personal reply'].map(p => <li key={p}>→ {p}</li>)}</ul>
+              </div>
+              <div>
+                <p className="text-xs font-bold text-emerald-600 mb-3">High-Impact Opportunities</p>
+                <ul className="text-xs space-y-1.5 text-foreground/80">{['Lead with founder credentials and engineering titles immediately','Pair every technical claim with a plain-language consequence','Label renders honestly, show live status per project','Mark the mid-tier package as the one most homeowners settle on','Route every enquiry into a pre-filled WhatsApp message to a founder directly'].map(o => <li key={o}>→ {o}</li>)}</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <FullscreenModal isOpen={!!modalImage} onClose={() => setModalImage(null)} imageSrc={modalImage ?? ''} title={modalTitle} />
+      </>
+    );
+  }
 
   if (isFurnore) {
     const src = '/Furnore/UserJourneyMapping.png';
@@ -1563,6 +1641,7 @@ const WireframeGallery = ({ project }: { project: Project }) => {
   const isFurnore = project.id === 'furnore';
   const isOpes = project.id === 'opes';
   const isKishore = project.id === 'kishore-portfolio';
+  const isNDC = project.id === 'nandhini-design-constructions';
 
   const furnoreWireframes = [
     { id: 'w01', title: '01 Landing Page', desc: 'Hero, About band, New Arrivals, Shop by Category, Best Sellers, Services band, Testimonials', src: '/Furnore/01_Landing_Page.png' },
@@ -1606,10 +1685,20 @@ const WireframeGallery = ({ project }: { project: Project }) => {
     { id: 'b06', title: '06 Shopping Cart (Mobile)', desc: 'Cart items, order summary, shipping threshold progress, empty state', src: '/Bloom-Brew/Cart%20Page.png' },
   ];
 
+  const ndcWireframes = [
+    { id: 'n01', title: '01 Home', desc: 'Hero, "we engineer not estimate" positioning, service teasers, package preview, project teaser', src: '/NandhiniDesignConstructions/wireframes/Home.svg' },
+    { id: 'n02', title: '02 Services', desc: 'Three engineering disciplines with plain-language claims, serviceability banner', src: '/NandhiniDesignConstructions/wireframes/Services.svg' },
+    { id: 'n03', title: '03 Packages', desc: 'Four fixed tiers by sq.ft and ₹/sq.ft, mid-tier marked as the default choice', src: '/NandhiniDesignConstructions/wireframes/Packages.svg' },
+    { id: 'n04', title: '04 Project Detail', desc: 'Daylight time-of-day toggle, honest render caption, milestone timeline', src: '/NandhiniDesignConstructions/wireframes/ProjectDetail.svg' },
+    { id: 'n05', title: '05 Enquiry', desc: 'District, plot size, budget and timeline fields routing straight into WhatsApp', src: '/NandhiniDesignConstructions/wireframes/Enquiry.svg' },
+    { id: 'n06', title: '06 Contact', desc: 'Founder bio cards with direct WhatsApp links, address, and the philanthropy note', src: '/NandhiniDesignConstructions/wireframes/Contact.svg' },
+  ];
+
   const getWireframes = () => {
     if (isFurnore) return furnoreWireframes;
     if (isOpes) return opesWireframes;
     if (isKishore) return kishoreWireframes;
+    if (isNDC) return ndcWireframes;
     return bbWireframes;
   };
 
@@ -1618,6 +1707,7 @@ const WireframeGallery = ({ project }: { project: Project }) => {
   const getBannerProps = () => {
     if (isFurnore) return { icon: <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />, className: 'bg-amber-50 dark:bg-amber-950/30 border-amber-600', titleClass: 'text-amber-900 dark:text-amber-300', title: 'Lo-Fi Wireframes: Desktop (1280px)', desc: '20 grayscale screens. Crosshatch = image placeholder. Text bars = copy blocks. Stakeholder approved before engagement concluded.' };
     if (isOpes) return { icon: <Smartphone className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />, className: 'bg-red-50 dark:bg-red-950/30 border-red-600', titleClass: 'text-red-900 dark:text-red-300', title: 'Wireframe Iterations: Layout Structure', desc: 'These show the structural wireframes used to define section order, hierarchy, and CTA placement. Use the "View UI Design" button at the top to see the styled visual versions.' };
+    if (isNDC) return { icon: <Smartphone className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />, className: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-600', titleClass: 'text-emerald-900 dark:text-emerald-300', title: 'Lo-Fi Wireframes: Mobile (375px)', desc: '6 grayscale screens rebuilt from the live site to document structure. Crosshatch = render/image placeholder. Grey bars = copy blocks. WhatsApp-first contact pattern carried through every screen.' };
     return { icon: <Smartphone className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />, className: 'bg-blue-50 dark:bg-blue-950/30 border-blue-600', titleClass: 'text-blue-900 dark:text-blue-300', title: 'Mobile First Design', desc: '82% of customers browse at markets on mobile. All wireframes designed for thumb-friendly navigation with 48px minimum touch targets.' };
   };
 
@@ -1627,6 +1717,7 @@ const WireframeGallery = ({ project }: { project: Project }) => {
     if (isFurnore) return '20 SCREENS: LO-FI WIREFRAMES';
     if (isOpes) return '3 WIREFRAME ITERATIONS: LAYOUT STRUCTURE';
     if (isKishore) return '1 LO-FI WIREFRAME: STRUCTURAL LAYOUT';
+    if (isNDC) return '6 SCREENS: LO-FI WIREFRAMES';
     return 'MOBILE WIREFRAMES';
   };
 
@@ -1634,6 +1725,7 @@ const WireframeGallery = ({ project }: { project: Project }) => {
     if (isFurnore) return 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4';
     if (isOpes) return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
     if (isKishore) return 'grid-cols-1 sm:grid-cols-2';
+    if (isNDC) return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
     return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
   };
 
@@ -1686,6 +1778,7 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
   const isFurnore = project.id === 'furnore';
   const isOpes    = project.id === 'opes';
   const isKishore = project.id === 'kishore-portfolio';
+  const isNDC      = project.id === 'nandhini-design-constructions';
   const isExtras   = project.id === 'the-extras';
   const isNicheUX  = project.id === 'nicheux-narrative';
 
@@ -2101,7 +2194,7 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                 <section id="journeys" ref={setSectionRef('journeys')} className="case-section scroll-mt-56" role="tabpanel">
                   <div className="flex items-center gap-4 mb-8"><MapPin className="w-4 h-4 text-emerald-600 flex-shrink-0" /><span className="text-[11px] font-mono uppercase tracking-[0.3em] text-emerald-600 font-semibold">THE JOURNEY</span><div className="flex-1 h-px bg-emerald-600/40" /></div>
                   <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-8 md:mb-12">
-                    {isFurnore ? 'User Journey Map: 3 Personas' : isKishore ? 'User Journey Map: Alex (Sports Academy Director)' : isOpes ? 'User Journey Map: Priya and 2 Personas' : 'User Journey Map'}
+                    {isFurnore ? 'User Journey Map: 3 Personas' : isKishore ? 'User Journey Map: Alex (Sports Academy Director)' : isOpes ? 'User Journey Map: Priya and 2 Personas' : isNDC ? 'User Journey Map: Meenakshi, Arjun and Kavitha' : 'User Journey Map'}
                   </h2>
                   <JourneyMaps project={project} />
                 </section>
@@ -2112,7 +2205,7 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                 <section id="wireframes" ref={setSectionRef('wireframes')} className="case-section scroll-mt-56" role="tabpanel">
                   <div className="flex items-center gap-4 mb-8"><Camera className="w-4 h-4 text-amber-600 flex-shrink-0" /><span className="text-[11px] font-mono uppercase tracking-[0.3em] text-amber-600 font-semibold">THE SKETCHES</span><div className="flex-1 h-px bg-amber-600/40" /></div>
                   <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-8 md:mb-12">
-                    {isFurnore ? 'Lo-Fi Wireframes: 20 Screens' : isOpes ? 'Wireframe Iterations: Layout Structure' : isKishore ? 'Wireframes: Lo-Fi Structural Layout' : 'Wireframes'}
+                    {isFurnore ? 'Lo-Fi Wireframes: 20 Screens' : isOpes ? 'Wireframe Iterations: Layout Structure' : isKishore ? 'Wireframes: Lo-Fi Structural Layout' : isNDC ? 'Wireframes: 6 Screens Rebuilt from the Live Site' : 'Wireframes'}
                   </h2>
                   <WireframeGallery project={project} />
                 </section>
@@ -2126,9 +2219,9 @@ const CaseStudyPage = ({ project, onClose }: CaseStudyPageProps) => {
                   <div className="space-y-8">
                     <div>
                       <p className="section-label mb-2 text-accent">COLOR PALETTE: THE EVIDENCE</p>
-                      {(isFurnore || isKishore || isOpes) && (
+                      {(isFurnore || isKishore || isOpes || isNDC) && (
                         <p className="text-xs text-muted-foreground mb-4 italic border-l-2 border-accent/30 pl-3">
-                          {isFurnore ? "Furnore's product design system defined for the live website. Not this portfolio's colour palette." : isKishore ? "K29 Portfolio design system: dark theme with dual-career colour coding. Not this portfolio's palette." : "OPES landing page design system: burgundy brand palette specified by the client."}
+                          {isFurnore ? "Furnore's product design system defined for the live website. Not this portfolio's colour palette." : isKishore ? "K29 Portfolio design system: dark theme with dual-career colour coding. Not this portfolio's palette." : isOpes ? "OPES landing page design system: burgundy brand palette specified by the client." : "NDC's live brand system: deep forest and olive, pulled directly from the shipped site's theme colours and font imports. Not this portfolio's palette."}
                         </p>
                       )}
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">

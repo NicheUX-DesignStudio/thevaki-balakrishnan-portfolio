@@ -162,12 +162,18 @@ const SpecialWindowButton = ({
   );
 };
 
+// Chunk an array into fixed-size groups, e.g. chunk([1,2,3,4,5], 2) => [[1,2],[3,4],[5]]
+const chunk = <T,>(arr: T[], size: number): T[][] => {
+  const chunks: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) chunks.push(arr.slice(i, i + size));
+  return chunks;
+};
+
 const Building = ({ onWindowClick, onSpecialClick, viewedProjects }: BuildingProps) => {
-  // Split projects for different layouts
-  const row1 = projects.slice(0, 2);  // First 2 projects
-  const row2 = projects.slice(2, 4);  // Next 2 projects
-  const row3 = projects.slice(4, 6);  // Last 2 projects
-  
+  // Split projects into rows dynamically so new projects always get a window
+  const desktopRows = chunk(projects, 3);
+  const mobileRows = chunk(projects, 2);
+
   // Track which window is active (showing info) on mobile
   const [activeWindowId, setActiveWindowId] = useState<string | null>(null);
 
@@ -193,115 +199,62 @@ const Building = ({ onWindowClick, onSpecialClick, viewedProjects }: BuildingPro
         {/* Windows Container - responsive grid */}
         <div className="relative z-10 flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           
-          {/* DESKTOP LAYOUT (3-3-2) - hidden on mobile, shown on md and up */}
+          {/* DESKTOP LAYOUT (rows of 3) - hidden on mobile, shown on md and up */}
           <div className="hidden md:flex md:flex-col md:gap-8 lg:gap-12 w-full">
-            {/* Desktop Row 1 - First 3 projects */}
-            <div className="flex justify-center gap-6 lg:gap-8">
-              {projects.slice(0, 3).map((project, index) => (
-                <Window
-                  key={project.id}
-                  project={project}
-                  index={index}
-                  onClick={() => {
-                    setActiveWindowId(null);
-                    onWindowClick(project.id);
-                  }}
-                  isViewed={viewedProjects.has(project.id)}
-                  activeWindowId={activeWindowId}
-                  onWindowActivate={setActiveWindowId}
-                />
-              ))}
-            </div>
-
-            {/* Desktop Floor line */}
-            <div className="h-px bg-building-detail/50 mx-4" />
-            
-            {/* Desktop Row 2 - Next 3 projects */}
-            <div className="flex justify-center gap-6 lg:gap-8">
-              {projects.slice(3, 6).map((project, index) => (
-                <Window
-                  key={project.id}
-                  project={project}
-                  index={index + 3}
-                  onClick={() => {
-                    setActiveWindowId(null);
-                    onWindowClick(project.id);
-                  }}
-                  isViewed={viewedProjects.has(project.id)}
-                  activeWindowId={activeWindowId}
-                  onWindowActivate={setActiveWindowId}
-                />
-              ))}
-            </div>
-
-            {/* Desktop Floor line */}
-            <div className="h-px bg-building-detail/50 mx-4" />
+            {desktopRows.map((row, rowIndex) => (
+              <div key={rowIndex}>
+                <div className="flex justify-center gap-6 lg:gap-8">
+                  {row.map((project, i) => {
+                    const index = rowIndex * 3 + i;
+                    return (
+                      <Window
+                        key={project.id}
+                        project={project}
+                        index={index}
+                        onClick={() => {
+                          setActiveWindowId(null);
+                          onWindowClick(project.id);
+                        }}
+                        isViewed={viewedProjects.has(project.id)}
+                        activeWindowId={activeWindowId}
+                        onWindowActivate={setActiveWindowId}
+                      />
+                    );
+                  })}
+                </div>
+                {/* Desktop Floor line */}
+                <div className="h-px bg-building-detail/50 mx-4 mt-8 lg:mt-12" />
+              </div>
+            ))}
           </div>
 
-          {/* MOBILE LAYOUT (2-2-2-2) - shown on mobile, hidden on md and up */}
+          {/* MOBILE LAYOUT (rows of 2) - shown on mobile, hidden on md and up */}
           <div className="flex md:hidden flex-col gap-4 w-full">
-            {/* Mobile Row 1 - First 2 projects */}
-            <div className="flex justify-center gap-3">
-              {row1.map((project, index) => (
-                <Window
-                  key={project.id}
-                  project={project}
-                  index={index}
-                  onClick={() => {
-                    setActiveWindowId(null);
-                    onWindowClick(project.id);
-                  }}
-                  isViewed={viewedProjects.has(project.id)}
-                  activeWindowId={activeWindowId}
-                  onWindowActivate={setActiveWindowId}
-                />
-              ))}
-            </div>
-
-            {/* Mobile Floor line */}
-            <div className="h-px bg-building-detail/50 mx-2" />
-            
-            {/* Mobile Row 2 - Next 2 projects */}
-            <div className="flex justify-center gap-3">
-              {row2.map((project, index) => (
-                <Window
-                  key={project.id}
-                  project={project}
-                  index={index + 2}
-                  onClick={() => {
-                    setActiveWindowId(null);
-                    onWindowClick(project.id);
-                  }}
-                  isViewed={viewedProjects.has(project.id)}
-                  activeWindowId={activeWindowId}
-                  onWindowActivate={setActiveWindowId}
-                />
-              ))}
-            </div>
-
-            {/* Mobile Floor line */}
-            <div className="h-px bg-building-detail/50 mx-2" />
-            
-            {/* Mobile Row 3 - Last 2 projects */}
-            <div className="flex justify-center gap-3">
-              {row3.map((project, index) => (
-                <Window
-                  key={project.id}
-                  project={project}
-                  index={index + 4}
-                  onClick={() => {
-                    setActiveWindowId(null);
-                    onWindowClick(project.id);
-                  }}
-                  isViewed={viewedProjects.has(project.id)}
-                  activeWindowId={activeWindowId}
-                  onWindowActivate={setActiveWindowId}
-                />
-              ))}
-            </div>
-
-            {/* Mobile Floor line */}
-            <div className="h-px bg-building-detail/50 mx-2" />
+            {mobileRows.map((row, rowIndex) => (
+              <div key={rowIndex} className="flex flex-col gap-4">
+                <div className="flex justify-center gap-3">
+                  {row.map((project, i) => {
+                    const index = rowIndex * 2 + i;
+                    return (
+                      <Window
+                        key={project.id}
+                        project={project}
+                        index={index}
+                        onClick={() => {
+                          setActiveWindowId(null);
+                          onWindowClick(project.id);
+                        }}
+                        isViewed={viewedProjects.has(project.id)}
+                        activeWindowId={activeWindowId}
+                        onWindowActivate={setActiveWindowId}
+                      />
+                    );
+                  })}
+                </div>
+                {/* Mobile Floor line */}
+                <div className="h-px bg-building-detail/50 mx-2" />
+              </div>
+            ))}
           </div>
 
           {/* Bottom Row - Special Windows (always 2, for both layouts) */}

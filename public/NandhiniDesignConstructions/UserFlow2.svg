@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" font-family="'DM Sans', Arial, sans-serif">
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1E1E1E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="340" fill="#ffffff"/>
+  <text x="20" y="26" font-size="12" font-weight="700" fill="#8A9A7E" font-family="'IBM Plex Mono', monospace">EDGE CASE · FORMAL QUOTATION VIA THE ENQUIRY ROUTE</text>
+
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow2)">
+    <line x1="405" y1="95" x2="425" y2="95"/>
+    <line x1="795" y1="95" x2="815" y2="95"/>
+  </g>
+  <path d="M1145,140 L1145,190 L1145,215" stroke="#1E1E1E" stroke-width="2" fill="none" marker-end="url(#arrow2)"/>
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow2)">
+    <line x1="815" y1="260" x2="795" y2="260"/>
+    <line x1="425" y1="260" x2="405" y2="260"/>
+  </g>
+
+  <!-- 1 start -->
+  <rect x="35" y="50" width="350" height="90" rx="45" fill="#4A7A28"/>
+  <text x="210" y="90" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">01 · Wants a formal quotation</text>
+  <text x="210" y="108" text-anchor="middle" fill="#F7F5EF" font-size="10">not just a general chat</text>
+
+  <!-- 2 action -->
+  <rect x="425" y="50" width="350" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="600" y="88" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">02 · Opens Enquiry</text>
+  <text x="600" y="106" text-anchor="middle" fill="#8A9A7E" font-size="10">instead of general Contact</text>
+
+  <!-- 3 action -->
+  <rect x="815" y="50" width="350" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="990" y="82" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">03 · Enters plot detail</text>
+  <text x="990" y="100" text-anchor="middle" fill="#8A9A7E" font-size="10">district, plot size, budget,</text>
+  <text x="990" y="115" text-anchor="middle" fill="#8A9A7E" font-size="10">timeline</text>
+
+  <!-- 4 action -->
+  <rect x="815" y="215" width="350" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="990" y="253" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">04 · Adds optional notes</text>
+  <text x="990" y="271" text-anchor="middle" fill="#8A9A7E" font-size="10">Vastu / family requirements</text>
+
+  <!-- 5 action -->
+  <rect x="425" y="215" width="350" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="600" y="248" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">05 · Submits form</text>
+  <text x="600" y="266" text-anchor="middle" fill="#8A9A7E" font-size="10">WhatsApp opens pre-filled</text>
+  <text x="600" y="281" text-anchor="middle" fill="#8A9A7E" font-size="10">with all the details</text>
+
+  <!-- 6 end -->
+  <rect x="35" y="215" width="350" height="90" fill="#0A1A06" stroke="#4A7A28" stroke-width="3" rx="4"/>
+  <text x="210" y="253" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">06 · Founder replies ✓</text>
+  <text x="210" y="271" text-anchor="middle" fill="#F7F5EF" font-size="10">personally, within a working day</text>
+</svg>

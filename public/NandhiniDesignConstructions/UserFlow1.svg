@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="'DM Sans', Arial, sans-serif">
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1E1E1E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="360" fill="#ffffff"/>
+  <text x="20" y="26" font-size="12" font-weight="700" fill="#8A9A7E" font-family="'IBM Plex Mono', monospace">PRIMARY FLOW · HOMEPAGE TO WHATSAPP ENQUIRY</text>
+
+  <!-- connectors row 1 -->
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow1)">
+    <line x1="305" y1="95" x2="335" y2="95"/>
+    <line x1="585" y1="95" x2="615" y2="95"/>
+    <line x1="865" y1="95" x2="895" y2="95"/>
+  </g>
+  <!-- connector row1 -> row2 -->
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow1)" fill="none">
+    <path d="M1145,140 L1145,190 L1145,225"/>
+  </g>
+  <!-- connectors row 2 (reverse direction, right to left) -->
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow1)">
+    <line x1="895" y1="270" x2="865" y2="270" transform="translate(0,0)"/>
+  </g>
+
+  <!-- Row 1: steps 1-4 -->
+  <!-- 1 start -->
+  <rect x="55" y="50" width="250" height="90" rx="45" fill="#4A7A28"/>
+  <text x="180" y="90" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">01 · Land on Homepage</text>
+  <text x="180" y="108" text-anchor="middle" fill="#F7F5EF" font-size="10">via district search or referral</text>
+
+  <!-- 2 action -->
+  <rect x="335" y="50" width="250" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="460" y="88" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">02 · Read positioning</text>
+  <text x="460" y="106" text-anchor="middle" fill="#8A9A7E" font-size="10">"We engineer, not estimate"</text>
+
+  <!-- 3 action -->
+  <rect x="615" y="50" width="250" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="740" y="88" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">03 · Open Services</text>
+  <text x="740" y="106" text-anchor="middle" fill="#8A9A7E" font-size="10">reviews structural claims</text>
+
+  <!-- 4 action -->
+  <rect x="895" y="50" width="250" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="1020" y="88" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">04 · Open Packages</text>
+  <text x="1020" y="106" text-anchor="middle" fill="#8A9A7E" font-size="10">compares sq.ft / ₹ per sq.ft</text>
+
+  <!-- Row 2: steps 5-8, right to left visually but numbered continuing -->
+  <!-- 5 action (under 4) -->
+  <rect x="895" y="225" width="250" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="1020" y="263" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">05 · Open Projects</text>
+  <text x="1020" y="281" text-anchor="middle" fill="#8A9A7E" font-size="10">views Stone One as proof</text>
+
+  <!-- 6 decision -->
+  <polygon points="740,225 855,270 740,315 625,270" fill="#C8A84B" stroke="#1E1E1E" stroke-width="2"/>
+  <text x="740" y="264" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">06 · Tap "WhatsApp</text>
+  <text x="740" y="280" text-anchor="middle" fill="#1E1E1E" font-size="11" font-weight="700">the founders"</text>
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow1)"><line x1="625" y1="270" x2="595" y2="270"/></g>
+
+  <!-- 7 action -->
+  <rect x="335" y="225" width="250" height="90" fill="#ffffff" stroke="#1E1E1E" stroke-width="2" rx="4"/>
+  <text x="460" y="263" text-anchor="middle" fill="#1E1E1E" font-size="12" font-weight="700">07 · Pre-filled message</text>
+  <text x="460" y="281" text-anchor="middle" fill="#8A9A7E" font-size="10">opens directly in WhatsApp</text>
+  <g stroke="#1E1E1E" stroke-width="2" marker-end="url(#arrow1)"><line x1="335" y1="270" x2="305" y2="270"/></g>
+
+  <!-- 8 end -->
+  <rect x="55" y="225" width="250" height="90" fill="#0A1A06" stroke="#4A7A28" stroke-width="3" rx="4"/>
+  <text x="180" y="263" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">08 · Tap send ✓</text>
+  <text x="180" y="281" text-anchor="middle" fill="#F7F5EF" font-size="10">founder replies personally</text>
+</svg>

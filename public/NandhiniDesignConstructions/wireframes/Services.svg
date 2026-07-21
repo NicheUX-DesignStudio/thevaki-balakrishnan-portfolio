@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 900" font-family="'DM Sans', Arial, sans-serif">
+  <defs>
+    <pattern id="hatchSvc" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#B8B8B8" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect x="0.5" y="0.5" width="374" height="899" fill="#ffffff" stroke="#1E1E1E"/>
+
+  <text x="16" y="34" font-size="16" font-weight="700" fill="#1E1E1E">‹ Services</text>
+  <line x1="0" y1="56" x2="375" y2="56" stroke="#E0E0E0"/>
+
+  <text x="16" y="86" font-size="15" font-weight="700" fill="#1E1E1E">From the first vastu line</text>
+  <text x="16" y="106" font-size="15" font-weight="700" fill="#1E1E1E">to the day you turn the key.</text>
+
+  <!-- Service block 1: House Construction -->
+  <rect x="16" y="130" width="343" height="180" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+  <rect x="32" y="146" width="60" height="60" fill="url(#hatchSvc)"/>
+  <text x="104" y="160" font-size="12" font-weight="700" fill="#1E1E1E">House Construction</text>
+  <rect x="104" y="172" width="235" height="7" fill="#8A9A7E"/>
+  <rect x="104" y="184" width="235" height="7" fill="#8A9A7E"/>
+  <text x="32" y="232" font-size="9.5" font-weight="700" fill="#1E1E1E">Isolated / combined / raft / pile</text>
+  <text x="32" y="248" font-size="9.5" fill="#1E1E1E">foundations sized to geotech</text>
+  <text x="32" y="264" font-size="9.5" fill="#1E1E1E">reports and IS 456 load calcs.</text>
+  <rect x="32" y="280" width="120" height="9" fill="#C8A84B"/>
+
+  <!-- Service block 2: Architectural Planning -->
+  <rect x="16" y="322" width="343" height="180" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+  <rect x="32" y="338" width="60" height="60" fill="url(#hatchSvc)"/>
+  <text x="104" y="352" font-size="12" font-weight="700" fill="#1E1E1E">Architectural Planning</text>
+  <rect x="104" y="364" width="235" height="7" fill="#8A9A7E"/>
+  <rect x="104" y="376" width="235" height="7" fill="#8A9A7E"/>
+  <text x="32" y="424" font-size="9.5" font-weight="700" fill="#1E1E1E">Room placement &amp; door</text>
+  <text x="32" y="440" font-size="9.5" fill="#1E1E1E">directions — Vastu integrated</text>
+  <text x="32" y="456" font-size="9.5" fill="#1E1E1E">from the first line we draw.</text>
+  <rect x="32" y="472" width="120" height="9" fill="#C8A84B"/>
+
+  <!-- Service block 3: Structural Design -->
+  <rect x="16" y="514" width="343" height="180" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+  <rect x="32" y="530" width="60" height="60" fill="url(#hatchSvc)"/>
+  <text x="104" y="544" font-size="12" font-weight="700" fill="#1E1E1E">Structural Design</text>
+  <rect x="104" y="556" width="235" height="7" fill="#8A9A7E"/>
+  <rect x="104" y="568" width="235" height="7" fill="#8A9A7E"/>
+  <text x="32" y="616" font-size="9.5" font-weight="700" fill="#1E1E1E">RCC columns, beams, slabs,</text>
+  <text x="32" y="632" font-size="9.5" fill="#1E1E1E">retaining walls — engineered</text>
+  <text x="32" y="648" font-size="9.5" fill="#1E1E1E">to Singapore-grade standards.</text>
+  <rect x="32" y="664" width="120" height="9" fill="#C8A84B"/>
+
+  <!-- serviceability banner -->
+  <rect x="16" y="712" width="343" height="60" fill="#0A1A06"/>
+  <text x="187" y="736" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff">Pan Tamil Nadu,</text>
+  <text x="187" y="752" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff">and beyond by invitation.</text>
+
+  <rect x="87" y="792" width="200" height="44" rx="4" fill="#ffffff" stroke="#0A1A06" stroke-width="2"/>
+  <text x="187" y="819" text-anchor="middle" fill="#0A1A06" font-size="12" font-weight="700">Talk to Saran or Prabaharan</text>
+</svg>

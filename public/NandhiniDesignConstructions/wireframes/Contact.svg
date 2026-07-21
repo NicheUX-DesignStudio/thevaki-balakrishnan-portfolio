@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 900" font-family="'DM Sans', Arial, sans-serif">
+  <defs>
+    <pattern id="hatchCon" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#B8B8B8" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect x="0.5" y="0.5" width="374" height="899" fill="#ffffff" stroke="#1E1E1E"/>
+
+  <text x="16" y="34" font-size="16" font-weight="700" fill="#1E1E1E">‹ Contact</text>
+  <line x1="0" y1="56" x2="375" y2="56" stroke="#E0E0E0"/>
+  <text x="16" y="88" font-size="15" font-weight="700" fill="#1E1E1E">Every great home starts</text>
+  <text x="16" y="108" font-size="15" font-weight="700" fill="#1E1E1E">with a single conversation.</text>
+
+  <!-- founder cards -->
+  <rect x="16" y="132" width="343" height="110" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+  <circle cx="60" cy="184" r="30" fill="url(#hatchCon)"/>
+  <text x="104" y="168" font-size="11.5" font-weight="700" fill="#1E1E1E">Er. Saran Chezhiyan</text>
+  <text x="104" y="184" font-size="9" fill="#8A9A7E">Co-founder · Construction &amp; Ops</text>
+  <rect x="104" y="198" width="120" height="24" rx="12" fill="#0A1A06"/>
+  <text x="164" y="214" text-anchor="middle" font-size="9" fill="#ffffff" font-weight="700">WhatsApp Saran</text>
+
+  <rect x="16" y="254" width="343" height="110" fill="#F7F5EF" stroke="#4A7A28" stroke-width="1.5"/>
+  <circle cx="60" cy="306" r="30" fill="url(#hatchCon)"/>
+  <text x="104" y="290" font-size="11.5" font-weight="700" fill="#1E1E1E">Er. Prabaharan Ramasamy</text>
+  <text x="104" y="306" font-size="9" fill="#8A9A7E">Co-founder · Architecture &amp; Design</text>
+  <rect x="104" y="320" width="140" height="24" rx="12" fill="#0A1A06"/>
+  <text x="174" y="336" text-anchor="middle" font-size="9" fill="#ffffff" font-weight="700">WhatsApp Prabaharan</text>
+
+  <!-- direct details -->
+  <text x="16" y="398" font-size="10" font-weight="700" fill="#1E1E1E" font-family="'IBM Plex Mono', monospace">DIRECT LINE</text>
+  <rect x="16" y="408" width="343" height="7" fill="#8A9A7E"/>
+  <text x="16" y="440" font-size="10" font-weight="700" fill="#1E1E1E" font-family="'IBM Plex Mono', monospace">EMAIL</text>
+  <rect x="16" y="450" width="280" height="7" fill="#8A9A7E"/>
+  <text x="16" y="482" font-size="10" font-weight="700" fill="#1E1E1E" font-family="'IBM Plex Mono', monospace">ADDRESS</text>
+  <rect x="16" y="492" width="300" height="7" fill="#8A9A7E"/>
+  <rect x="16" y="504" width="220" height="7" fill="#8A9A7E"/>
+  <text x="16" y="536" font-size="10" font-weight="700" fill="#1E1E1E" font-family="'IBM Plex Mono', monospace">HOURS</text>
+  <rect x="16" y="546" width="230" height="7" fill="#8A9A7E"/>
+
+  <!-- map placeholder -->
+  <rect x="16" y="574" width="343" height="140" fill="url(#hatchCon)" stroke="#B8B8B8"/>
+  <text x="187" y="648" text-anchor="middle" font-size="9" fill="#1E1E1E">Nannilam, Tiruvarur — map pin</text>
+
+  <!-- philanthropy note -->
+  <rect x="16" y="732" width="343" height="70" fill="#C8A84B" opacity="0.15" stroke="#C8A84B" stroke-width="1.5"/>
+  <text x="187" y="758" text-anchor="middle" font-size="10" font-weight="700" fill="#1E1E1E">We also build futures.</text>
+  <text x="187" y="774" text-anchor="middle" font-size="8.5" fill="#8A9A7E">A portion of every project supports</text>
+  <text x="187" y="788" text-anchor="middle" font-size="8.5" fill="#8A9A7E">scholarships and libraries in Tamil Nadu.</text>
+</svg>
