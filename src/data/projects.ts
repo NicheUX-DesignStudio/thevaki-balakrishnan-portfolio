@@ -1699,10 +1699,10 @@ I've included this project because the design work was done well, because the pr
     isActive: true,
     isFeatured: false,
     hasSilhouette: false,
-    year: '2024',
+    year: '2026',
 
     // ============ OMITB CASE FILE ============
-    caseNumber: 'ARCONIA-2024-004',
+    caseNumber: 'ARCONIA-2026-004',
     evidenceCount: 51,
     primarySuspect: 'The Split Identity',
     victim: 'Digital Presence',
@@ -2410,10 +2410,10 @@ This is a self-initiated project, which means every decision was both a design d
     isActive: true,
     isFeatured: true,
     hasSilhouette: true,
-    year: '2025',
+    year: '2026',
 
     // ============ OMITB CASE FILE ============
-    caseNumber: 'ARCONIA-2025-006',
+    caseNumber: 'ARCONIA-2026-006',
     evidenceCount: 40,
     primarySuspect: 'The Verbal Estimate',
     victim: "The Homeowner's Trust",
@@ -2470,7 +2470,7 @@ This is a self-initiated project, which means every decision was both a design d
     // ================================================
 
     role: 'Web Designer & Developer (Lead), NicheUX Studio',
-    duration: 'Agency project, launched 2025',
+    duration: 'Agency project, launched 2026',
     team: 'NicheUX Studio, for Nandhini Design Constructions (Tamil Nadu)',
     tools: ['Figma', 'React', 'TypeScript', 'Vite', 'React Router', 'Framer Motion', 'Schema.org / JSON-LD SEO'],
 
