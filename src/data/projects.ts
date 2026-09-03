@@ -2190,214 +2190,6 @@ This is a self-initiated project, which means every decision was both a design d
     },
   },
 
-// ─────────────────────────────────────────────────────────────────────────────
-  // THE EXTRAS - SMALL CLIENT PROJECTS
-  // SEASON 1 · EPISODE 4
-// ─────────────────────────────────────────────────────────────────────────────
-
-  {
-    id: 'the-extras',
-    title: 'The Extras',
-    subtitle: 'Branding · Graphic Design · Photography Direction',
-    windowColor: 'coral' as WindowColor,
-    isActive: true,
-    isFeatured: false,
-    hasSilhouette: false,
-    year: '2024–25',
-
-    caseNumber: 'ARCONIA-2024-EXT',
-    evidenceCount: 9,
-    primarySuspect: 'The Blank Canvas',
-    victim: 'Brand Identity',
-    episodeTitle: "The Case of the Jobs That Don't Fit a Template",
-
-    sitemap: {
-      structure: [
-        ['The Extras'],
-        ['Mini Case 01: Kingdom of Sweets Banner'],
-        ['Mini Case 02: Sooraj Nikam LinkedIn Banner'],
-        ['Mini Case 03: Aadharsham Photography Portfolio'],
-      ],
-      userFlows: {
-        recruiter: ['Enter Arconia', 'Browse The Extras', 'View mini-cases', 'Contact investigator'],
-        client: ['Enter Arconia', 'View graphic design work', 'Review branding examples', 'Initiate consultation'],
-        returnVisitor: ['Direct case access', 'Review design outputs'],
-      },
-      entryPoints: ['The Arconia (Home)', 'Direct case links'],
-      exitPoints: ['Contact investigator', 'LinkedIn profile', 'Email outreach'],
-      evidenceRoom: {
-        primaryPaths: ['/', '/cases'],
-        evidenceLocker: [],
-        caseFiles: [],
-      },
-    },
-
-    role: 'Graphic Designer · Brand Designer',
-    duration: 'Varies per project',
-    team: 'Freelance — independent client work',
-    tools: ['Figma', 'Adobe Illustrator', 'Canva Pro'],
-    outcomeSummary:
-      'Three client deliverables spanning physical signage, personal branding, and photography portfolio direction — each solved a distinct visual communication problem.',
-
-    context: `Not every project fits a UX case study format. Some jobs are smaller, faster, and more personal — a banner for a friend's candy shop toy, a LinkedIn header for a returning client, a digital booklet for a photographer who needs to share his portfolio without email attachments. These are those projects.`,
-
-    problem: `The challenge in smaller design work is delivering something that feels considered, not rushed. A banner for a toy candy dispenser still needs to honour a brand identity the client spent years working inside. A LinkedIn header still needs to communicate credibility in 3 seconds. Small scope doesn't mean small stakes.`,
-
-    businessContext: {
-      goals: [
-        "Kingdom of Sweets: Create an arch banner for a personal pick-n-mix toy, referencing the client's time working at Kingdom of Sweets",
-        'Sooraj Nikam: Design a LinkedIn banner that communicates a triple creative identity in one glance',
-        'Aadharsham Photography: Build an online-shareable portfolio slideshow for an architectural photographer',
-      ],
-      kpis: ['Client satisfaction', 'Brand fidelity', 'Shareability'],
-      successMetrics: ['Approved by client', 'Matches brand references', 'Works across devices'],
-      technicalConstraints: [
-        'Kingdom of Sweets: Must match existing KoS brand colours — purple, gold, lime green',
-        'Sooraj Nikam: LinkedIn banner dimensions 1584 × 396px, dark background',
-        'Aadharsham: PDF booklet must translate to a shareable interactive format',
-      ],
-    },
-
-    competitiveAnalysis: [],
-    personas: [],
-    journeyMap: [],
-
-    // ── PREVIOUSLY MISSING FIELDS ─────────────────────────────────────────────
-    usersAndNeeds: {
-      primaryUsers:
-        'Individual clients with personal or professional branding needs. Not a mass-market audience — each project had a single decision-maker and a specific, personal brief.',
-      needs: [
-        'Design that honours an existing brand identity (KoS) without simply copying it',
-        'A professional LinkedIn presence that feels personal, not corporate',
-        'A shareable portfolio format that replaces a PDF attachment',
-      ],
-      constraints: [
-        'Kingdom of Sweets: Physical print dimensions constrained by the toy dispenser arch',
-        'Sooraj Nikam: LinkedIn banner must read well at thumbnail size and full size',
-        'Aadharsham: No new photography session — must work with existing booklet assets',
-      ],
-    },
-
-    research: {
-      methods: [
-        'Client intake conversation for each project (brief, references, constraints)',
-        'Brand audit of Kingdom of Sweets identity system',
-        'Competitive review of LinkedIn banner formats for creative professionals',
-        'Content audit of the Aadharsham PDF booklet before restructuring',
-      ],
-      participants: 'One client per project — direct brief and review cycle only',
-      duration: '1–3 days per project',
-      approach: `Research for small client work is almost entirely about listening. The Kingdom of Sweets client brought a Samsung Notes sketch and three brand references. Sooraj brought a tagline and an existing headshot. Aadharsham brought a PDF. The job in each case was to extract what mattered — the arch proportions, the tagline rhythm, the booklet's category structure — and build from that, not from a template.`,
-    },
-    // ─────────────────────────────────────────────────────────────────────────
-
-    insights: {
-      key: "Constraints from a client's history — a job they used to love, a brand they want to honour — are the most interesting constraints to design within.",
-      findings: [
-        "Kingdom of Sweets: The client's hand-drawn arch sketch was the exact right shape. Trust the brief.",
-        'Sooraj Nikam: "Conceptualize · Develop · Deliver" works as both a tagline and a layout rhythm.',
-        'Aadharsham: A PDF portfolio is a dead end. An interactive gallery is an invitation.',
-      ],
-    },
-
-    informationArchitecture: { description: '', decisions: [] },
-    userFlows: { primary: [] },
-    interactionDesign: { approach: '', decisions: [] },
-    wireframes: { changes: [], reasoning: '', tradeoffs: [] },
-
-    designSystem: {
-      colors: [
-        { name: 'KoS Purple', value: '#5B2C8D', usage: 'Kingdom of Sweets primary' },
-        { name: 'KoS Gold', value: '#F5A623', usage: 'Kingdom of Sweets text and accents' },
-        { name: 'KoS Green', value: '#4CAF50', usage: 'Kingdom of Sweets border' },
-        { name: 'Sooraj Dark', value: '#0D1B2A', usage: 'LinkedIn banner background' },
-        { name: 'Aadharsham White', value: '#FFFFFF', usage: 'Photography booklet base' },
-      ],
-      typography: [
-        { level: 'KoS Display', size: 'Large', weight: '900', lineHeight: '1.0' },
-        { level: 'LinkedIn Headline', size: '40px', weight: '300', lineHeight: '1.2' },
-        { level: 'Photography Caption', size: '12px', weight: '400', lineHeight: '1.5' },
-      ],
-      spacing: 'Per project',
-      components: ['Arch Banner', 'LinkedIn Header', 'Photography Slideshow'],
-      accessibilityRules: ['Contrast compliance on all text elements'],
-    },
-
-    accessibility: { considerations: [], implementation: '' },
-
-    usabilityTesting: {
-      goals: [],
-      participants: 'Client review only',
-      tasks: [],
-      findings: [],
-      iterations: [],
-    },
-
-    edgeCases: {
-      emptyStates: [],
-      loadingStates: [],
-      errorMessages: [],
-      failurePaths: [],
-    },
-
-    outcome: {
-      metrics: [
-        'Kingdom of Sweets banner: client-approved across two texture variants',
-        'LinkedIn banner: two layout versions delivered, one selected for live use',
-        'Aadharsham: interactive gallery replacing a static PDF',
-      ],
-      impact: `Three different clients, three different briefs, three different visual languages. The common thread: listen to what the client actually brings into the room — a sketch on a notes app, a brand they used to work for, a booklet they've been carrying around — and design from that, not from a template.`,
-      learnings: [
-        "The client's sketch is always a design brief in disguise.",
-        'A LinkedIn banner is a 3-second argument for taking someone seriously.',
-        'A PDF portfolio is a dead end. An interactive gallery is an invitation.',
-      ],
-    },
-  },
-
-  // ============================================
-  // NARRATIVE — CONTENT CREATION SUITE
-  // SEASON 1 · EPISODE 5
-  // ============================================
-  {
-    id:             "nicheux-narrative",
-    caseNumber:     "NICHEUX-2026-W1",
-    title:          "NicheUX — The Narrative",
-    episodeTitle:   "When Design Meets Storytelling",
-    year:           "2026",
-    role:           "Founder · Content Strategist · Designer",
-    team:           "NicheUX Studio (Solo)",
-    duration:       "Week 1 of Ongoing",
-    platforms:      ["Instagram", "LinkedIn", "Threads"],
-    tags:           ["Content Strategy", "Brand Identity", "Social Media", "Motion", "Editorial"],
-    context:        "NicheUX is a design and storytelling studio built on a single thesis: that design without story decorates, but design with story directs. Week One was about establishing that thesis in public — before there was an audience, before there were clients, before there was a following. Three pieces, three formats, one argument.",
-    problem:        "How do you build an audience for a studio whose entire value proposition is something most people cannot see — the gap between information and meaning?",
-    outcomeSummary: "Three pieces shipped. Brand voice established. Visual language seeded. Audience building begun.",
-    usersAndNeeds: {
-      primaryUsers: "Founders, brand leads, and designers who feel their work is not landing the way it should.",
-      needs: [
-        "Understand why technically good design sometimes fails to connect",
-        "See concrete examples of behaviour design principles in everyday contexts",
-        "Find a studio voice they can trust before committing to a project",
-      ],
-      constraints: [
-        "No existing audience at launch — every piece had to earn attention from zero",
-        "Solo operation — research, write, design, film, and publish all in one week",
-        "Brand identity still being developed while content was already going live",
-      ],
-    },
-    research: {
-      methods: [
-        "Content audit of competitor studios to identify positioning gap",
-        "Location scouting at London Underground stations for Reel shoot",
-        "Tone and format testing across long-form, carousel, and short-form video",
-      ],
-      participants: "Internal — no external research participants for launch content",
-      duration: "One week (Jan–Feb 2026)",
-      approach: "Build in public. Each piece is both a product and a hypothesis — testing which format and voice generates the most meaningful response from the right kind of audience.",
-    },
-  },
-
   // ============================================
   // NANDHINI DESIGN CONSTRUCTIONS — THE SINGAPORE STANDARD
   // SEASON 1 · EPISODE 6
@@ -2852,5 +2644,213 @@ Saran and the team reviewed the finished site as "exceptional," noting it exceed
     },
 
     liveUrl: 'https://www.nandhinidc.in/',
+  },
+
+  // ============================================
+  // NARRATIVE — CONTENT CREATION SUITE
+  // SEASON 1 · EPISODE 5
+  // ============================================
+  {
+    id:             "nicheux-narrative",
+    caseNumber:     "NICHEUX-2026-W1",
+    title:          "NicheUX — The Narrative",
+    episodeTitle:   "When Design Meets Storytelling",
+    year:           "2026",
+    role:           "Founder · Content Strategist · Designer",
+    team:           "NicheUX Studio (Solo)",
+    duration:       "Week 1 of Ongoing",
+    platforms:      ["Instagram", "LinkedIn", "Threads"],
+    tags:           ["Content Strategy", "Brand Identity", "Social Media", "Motion", "Editorial"],
+    context:        "NicheUX is a design and storytelling studio built on a single thesis: that design without story decorates, but design with story directs. Week One was about establishing that thesis in public — before there was an audience, before there were clients, before there was a following. Three pieces, three formats, one argument.",
+    problem:        "How do you build an audience for a studio whose entire value proposition is something most people cannot see — the gap between information and meaning?",
+    outcomeSummary: "Three pieces shipped. Brand voice established. Visual language seeded. Audience building begun.",
+    usersAndNeeds: {
+      primaryUsers: "Founders, brand leads, and designers who feel their work is not landing the way it should.",
+      needs: [
+        "Understand why technically good design sometimes fails to connect",
+        "See concrete examples of behaviour design principles in everyday contexts",
+        "Find a studio voice they can trust before committing to a project",
+      ],
+      constraints: [
+        "No existing audience at launch — every piece had to earn attention from zero",
+        "Solo operation — research, write, design, film, and publish all in one week",
+        "Brand identity still being developed while content was already going live",
+      ],
+    },
+    research: {
+      methods: [
+        "Content audit of competitor studios to identify positioning gap",
+        "Location scouting at London Underground stations for Reel shoot",
+        "Tone and format testing across long-form, carousel, and short-form video",
+      ],
+      participants: "Internal — no external research participants for launch content",
+      duration: "One week (Jan–Feb 2026)",
+      approach: "Build in public. Each piece is both a product and a hypothesis — testing which format and voice generates the most meaningful response from the right kind of audience.",
+    },
+  },
+
+// ─────────────────────────────────────────────────────────────────────────────
+  // THE EXTRAS - SMALL CLIENT PROJECTS
+  // SEASON 1 · EPISODE 4
+// ─────────────────────────────────────────────────────────────────────────────
+
+  {
+    id: 'the-extras',
+    title: 'The Extras',
+    subtitle: 'Branding · Graphic Design · Photography Direction',
+    windowColor: 'coral' as WindowColor,
+    isActive: true,
+    isFeatured: false,
+    hasSilhouette: false,
+    year: '2024–25',
+
+    caseNumber: 'ARCONIA-2024-EXT',
+    evidenceCount: 9,
+    primarySuspect: 'The Blank Canvas',
+    victim: 'Brand Identity',
+    episodeTitle: "The Case of the Jobs That Don't Fit a Template",
+
+    sitemap: {
+      structure: [
+        ['The Extras'],
+        ['Mini Case 01: Kingdom of Sweets Banner'],
+        ['Mini Case 02: Sooraj Nikam LinkedIn Banner'],
+        ['Mini Case 03: Aadharsham Photography Portfolio'],
+      ],
+      userFlows: {
+        recruiter: ['Enter Arconia', 'Browse The Extras', 'View mini-cases', 'Contact investigator'],
+        client: ['Enter Arconia', 'View graphic design work', 'Review branding examples', 'Initiate consultation'],
+        returnVisitor: ['Direct case access', 'Review design outputs'],
+      },
+      entryPoints: ['The Arconia (Home)', 'Direct case links'],
+      exitPoints: ['Contact investigator', 'LinkedIn profile', 'Email outreach'],
+      evidenceRoom: {
+        primaryPaths: ['/', '/cases'],
+        evidenceLocker: [],
+        caseFiles: [],
+      },
+    },
+
+    role: 'Graphic Designer · Brand Designer',
+    duration: 'Varies per project',
+    team: 'Freelance — independent client work',
+    tools: ['Figma', 'Adobe Illustrator', 'Canva Pro'],
+    outcomeSummary:
+      'Three client deliverables spanning physical signage, personal branding, and photography portfolio direction — each solved a distinct visual communication problem.',
+
+    context: `Not every project fits a UX case study format. Some jobs are smaller, faster, and more personal — a banner for a friend's candy shop toy, a LinkedIn header for a returning client, a digital booklet for a photographer who needs to share his portfolio without email attachments. These are those projects.`,
+
+    problem: `The challenge in smaller design work is delivering something that feels considered, not rushed. A banner for a toy candy dispenser still needs to honour a brand identity the client spent years working inside. A LinkedIn header still needs to communicate credibility in 3 seconds. Small scope doesn't mean small stakes.`,
+
+    businessContext: {
+      goals: [
+        "Kingdom of Sweets: Create an arch banner for a personal pick-n-mix toy, referencing the client's time working at Kingdom of Sweets",
+        'Sooraj Nikam: Design a LinkedIn banner that communicates a triple creative identity in one glance',
+        'Aadharsham Photography: Build an online-shareable portfolio slideshow for an architectural photographer',
+      ],
+      kpis: ['Client satisfaction', 'Brand fidelity', 'Shareability'],
+      successMetrics: ['Approved by client', 'Matches brand references', 'Works across devices'],
+      technicalConstraints: [
+        'Kingdom of Sweets: Must match existing KoS brand colours — purple, gold, lime green',
+        'Sooraj Nikam: LinkedIn banner dimensions 1584 × 396px, dark background',
+        'Aadharsham: PDF booklet must translate to a shareable interactive format',
+      ],
+    },
+
+    competitiveAnalysis: [],
+    personas: [],
+    journeyMap: [],
+
+    // ── PREVIOUSLY MISSING FIELDS ─────────────────────────────────────────────
+    usersAndNeeds: {
+      primaryUsers:
+        'Individual clients with personal or professional branding needs. Not a mass-market audience — each project had a single decision-maker and a specific, personal brief.',
+      needs: [
+        'Design that honours an existing brand identity (KoS) without simply copying it',
+        'A professional LinkedIn presence that feels personal, not corporate',
+        'A shareable portfolio format that replaces a PDF attachment',
+      ],
+      constraints: [
+        'Kingdom of Sweets: Physical print dimensions constrained by the toy dispenser arch',
+        'Sooraj Nikam: LinkedIn banner must read well at thumbnail size and full size',
+        'Aadharsham: No new photography session — must work with existing booklet assets',
+      ],
+    },
+
+    research: {
+      methods: [
+        'Client intake conversation for each project (brief, references, constraints)',
+        'Brand audit of Kingdom of Sweets identity system',
+        'Competitive review of LinkedIn banner formats for creative professionals',
+        'Content audit of the Aadharsham PDF booklet before restructuring',
+      ],
+      participants: 'One client per project — direct brief and review cycle only',
+      duration: '1–3 days per project',
+      approach: `Research for small client work is almost entirely about listening. The Kingdom of Sweets client brought a Samsung Notes sketch and three brand references. Sooraj brought a tagline and an existing headshot. Aadharsham brought a PDF. The job in each case was to extract what mattered — the arch proportions, the tagline rhythm, the booklet's category structure — and build from that, not from a template.`,
+    },
+    // ─────────────────────────────────────────────────────────────────────────
+
+    insights: {
+      key: "Constraints from a client's history — a job they used to love, a brand they want to honour — are the most interesting constraints to design within.",
+      findings: [
+        "Kingdom of Sweets: The client's hand-drawn arch sketch was the exact right shape. Trust the brief.",
+        'Sooraj Nikam: "Conceptualize · Develop · Deliver" works as both a tagline and a layout rhythm.',
+        'Aadharsham: A PDF portfolio is a dead end. An interactive gallery is an invitation.',
+      ],
+    },
+
+    informationArchitecture: { description: '', decisions: [] },
+    userFlows: { primary: [] },
+    interactionDesign: { approach: '', decisions: [] },
+    wireframes: { changes: [], reasoning: '', tradeoffs: [] },
+
+    designSystem: {
+      colors: [
+        { name: 'KoS Purple', value: '#5B2C8D', usage: 'Kingdom of Sweets primary' },
+        { name: 'KoS Gold', value: '#F5A623', usage: 'Kingdom of Sweets text and accents' },
+        { name: 'KoS Green', value: '#4CAF50', usage: 'Kingdom of Sweets border' },
+        { name: 'Sooraj Dark', value: '#0D1B2A', usage: 'LinkedIn banner background' },
+        { name: 'Aadharsham White', value: '#FFFFFF', usage: 'Photography booklet base' },
+      ],
+      typography: [
+        { level: 'KoS Display', size: 'Large', weight: '900', lineHeight: '1.0' },
+        { level: 'LinkedIn Headline', size: '40px', weight: '300', lineHeight: '1.2' },
+        { level: 'Photography Caption', size: '12px', weight: '400', lineHeight: '1.5' },
+      ],
+      spacing: 'Per project',
+      components: ['Arch Banner', 'LinkedIn Header', 'Photography Slideshow'],
+      accessibilityRules: ['Contrast compliance on all text elements'],
+    },
+
+    accessibility: { considerations: [], implementation: '' },
+
+    usabilityTesting: {
+      goals: [],
+      participants: 'Client review only',
+      tasks: [],
+      findings: [],
+      iterations: [],
+    },
+
+    edgeCases: {
+      emptyStates: [],
+      loadingStates: [],
+      errorMessages: [],
+      failurePaths: [],
+    },
+
+    outcome: {
+      metrics: [
+        'Kingdom of Sweets banner: client-approved across two texture variants',
+        'LinkedIn banner: two layout versions delivered, one selected for live use',
+        'Aadharsham: interactive gallery replacing a static PDF',
+      ],
+      impact: `Three different clients, three different briefs, three different visual languages. The common thread: listen to what the client actually brings into the room — a sketch on a notes app, a brand they used to work for, a booklet they've been carrying around — and design from that, not from a template.`,
+      learnings: [
+        "The client's sketch is always a design brief in disguise.",
+        'A LinkedIn banner is a 3-second argument for taking someone seriously.',
+        'A PDF portfolio is a dead end. An interactive gallery is an invitation.',
+      ],
+    },
   },
 ];
