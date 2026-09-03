@@ -2406,7 +2406,7 @@ This is a self-initiated project, which means every decision was both a design d
     id: 'nandhini-design-constructions',
     title: 'Nandhini Design Constructions',
     subtitle: 'Architecture & Turnkey Construction Studio',
-    windowColor: 'dim',
+    windowColor: 'amber',
     isActive: true,
     isFeatured: true,
     hasSilhouette: true,

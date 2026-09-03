@@ -5,12 +5,15 @@ import { Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(true);
 
   useEffect(() => {
-    // Check local storage or system preference
+    // Default to light mode unless the user has explicitly chosen dark
     const savedTheme = localStorage.getItem('arconia-theme'); // ✅ FIXED
-    if (savedTheme === 'light') {
+    if (savedTheme === 'dark') {
+      setIsLight(false);
+      document.documentElement.classList.remove('light-theme');
+    } else {
       setIsLight(true);
       document.documentElement.classList.add('light-theme');
     }
