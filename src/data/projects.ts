@@ -928,7 +928,7 @@ The core tension: OPES needed to feel credible enough to trust with your financi
       methods: [
         'Client intake interview (90 minutes) — goals, audience, competitive context',
         'Review of OPES written brief and brand specification document',
-        'Heuristic analysis of 8 fintech landing pages (Cleo, Monzo, Plum, Emma, Chip, Snoop, Cleo, YNAB)',
+        'Heuristic analysis of 8 fintech landing pages, including Cleo, Monzo, Plum, Emma, Chip, Snoop and YNAB',
         'Audience assumption mapping — who are we designing for and what do they fear?',
         'Copy review — identifying jargon, abstraction, and trust language across competitor sites',
       ],
